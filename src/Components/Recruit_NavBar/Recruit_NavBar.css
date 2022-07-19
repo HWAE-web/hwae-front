@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins-Bold.ttf') format('truetype')
+}
+
+.process{
+  /* process */
+  position: absolute;
+  left: 41.38%;
+  right: 54.9%;
+  top: 1.76%;
+  bottom: 96.3%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+
+  /* red */
+  color: #E02F36;
+}
+.about{
+  /* about */
+  position: absolute;
+  left: 46.1%;
+  right: 51.59%;
+  top: 1.76%;
+  bottom: 96.3%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+  
+  /* systemGrey/800 */
+  color: #424242;
+}
+.FAQ{
+  /* FAQ */
+  position: absolute;
+  left: 50.76%;
+  right: 46.39%;
+  top: 1.76%;
+  bottom: 96.3%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+
+  /* systemGrey/800 */
+  color: #424242;
+}
+.recruit_NAV{
+  /* recruit */
+  position: absolute;
+  left: 55.95%;
+  right: 41.38%;
+  top: 1.76%;
+  bottom: 96.3%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+
+  /* systemGrey/800 */
+  color: #424242;
+  }
+.joinus-btn{
+  /* Rectangle 3875 */
+  position: absolute;
+  width: 102px;
+  height: 35px;
+  left: 1728px;
+  top: 12px;
+
+  background: #E02F36;
+  border-radius: 37px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 19px;
+  letter-spacing: 0.46px; */
+
+/* white */
+
+color: #FFFFFF;
+  }

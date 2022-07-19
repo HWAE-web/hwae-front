@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: 'Spoqa Han Sans Neo Bold';
+  src: url('../../fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+  font-family: 'Spoqa Han Sans Neo Regular';
+  src: url('../../fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+.recruitBg{
+  /* 회색배경 */
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+
+  background: #FAFAFA;
+}
+.recruit{
+  /* Recruit */
+  position: absolute;
+  width: 156px;
+  height: 56px;
+  left: 191px;
+  top: 108px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+
+  /* 헤드라인 */
+
+  color: #333333;
+
+}
+.textbox{
+  /* 텍스트 박스 */
+  position: absolute;
+  left: 23.68%;
+  right: 5.16%;
+  top: 21.48%;
+  bottom: 10.93%;
+
+  background: rgba(255, 255, 255, 0.79);
+  /* 연한 그림자 */
+
+  box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
+  border-radius: 18px;
+}
+.front{
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  left: 191px;
+  top: 275px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  color: #666666;
+}
+.front:hover, .front.active{
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  left: 191px;
+  top: 275px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  color: #E02F36;
+}
+
+.back{
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  left: 191px;
+  top: 353px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  /* 본문 */
+
+  color: #666666;
+}
+.back:hover, .back.active{
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  left: 191px;
+  top: 353px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  /* 본문 */
+
+  color: #E02F36;
+}
+.designer{
+  position: absolute;
+  width: 85px;
+  height: 30px;
+  left: 191px;
+  top: 431px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  /* 본문 */
+
+  color: #666666;
+}
+.designer:hover, .designer.active{
+  position: absolute;
+  width: 85px;
+  height: 30px;
+  left: 191px;
+  top: 431px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  /* 본문 */
+
+  color: #E02F36;
+}
+.title{
+  position: absolute;
+  width: 656px;
+  height: 58px;
+  left: 70.29px;
+  top: 51px;
+
+  /* Heading/xlarge */
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+
+
+  /* red */
+
+  color: #E02F36;
+}
+.Detail{
+  position: absolute;
+  width: 656px;
+  height: 66px;
+  left: 69.83px;
+  top: 123px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  /* or 22px */
+
+  letter-spacing: -0.008em;
+
+  /* 본문 */
+
+  color: #666666;
+}
+.Do{
+  position: absolute;
+  width: 108.58px;
+  height: 31px;
+  left: 69.83px;
+  top: 311.05px;
+  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+  
+  
+  color: #E02F36;
+
+}
+.DoDetail{
+  position: absolute;
+  width: 453.33px;
+  height: 102.89px;
+  left: 69.97px;
+  top: 372.05px;
+
+  /* 16/24 */
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: -0.008em;
+
+  /* 헤드라인 */
+
+  color: #333333;
+
+}
+.Who{
+    position: absolute;
+    width: 111.25px;
+    height: 36px;
+    left: 547.07px;
+    top: 311.05px;
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    
+    
+    color: #E02F36;
+}
+.Ul{
+  position: absolute;
+  width: 380.86px;
+  height: 69.14px;
+  left: 530.52px;
+  top: 353.05px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.008em;
+
+  /* 헤드라인 */
+
+  color: #333333;
+}
+.Special{
+  /* 우대사항 */
+  position: absolute;
+  width: 127.92px;
+  height: 31px;
+  left: 954.14px;
+  top: 311.05px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+
+
+  /* red */
+
+  color: #E02F36;
+
+}
+.SpecialUl{
+  position: absolute;
+  width: 380.86px;
+  height: 69.14px;
+  left: 939.14px;
+  top: 353.05px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.008em;
+
+  /* 헤드라인 */
+
+  color: #333333;
+}
+.Recruit{
+  position: absolute;
+  left: 69.39px;
+  top: 559.67px;
+  width: 170px;
+  height: 48px;
+
+  /* Primary/Accent */
+
+  background: #FF2D46;
+  box-shadow: 0px 2.80141px 11.2057px rgba(255, 45, 70, 0.2);
+  border-radius: 52.293px;
+
+  font-family: 'Spoqa Han Sans Neo Bold';
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 18px;
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  
+  /* Neutrals/White */
+  color: #FFFFFF;
+}
