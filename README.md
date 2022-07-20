@@ -1,5 +1,6 @@
 # HWAE-front
 HWA-E 홈페이지 제작 프로젝트 레포지토리입니다!
+<img width="1407" alt="HWA-E" src="https://user-images.githubusercontent.com/94354545/179945751-039fbdd7-44ce-46ac-a0e4-54190727d501.png">
 
 ## 🤙🏻 커밋 규칙
 
