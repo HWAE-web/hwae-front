@@ -3,11 +3,11 @@ import "./Recruit_NavBar.css";
 function NavBar() {
   return (
     <div>
-      <p className="process">process</p>
-      <p className="about">about</p>
-      <p className="FAQ">FAQ</p>
-      <p className="recruit_NAV">recruit</p>
-      <div className="joinus-btn">Join us</div>
+      <p className="sub-nav-home">Home</p>
+      <p className="sub-nav-process">process</p>
+      <p className="sub-nav-FAQ">FAQ</p>
+      <p className="sub-nav-recruit">recruit</p>
+      <div className="sub-nav-btn">Log in</div>
     </div>
   );
 }

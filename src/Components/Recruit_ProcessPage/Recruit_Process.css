@@ -1,15 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @font-face {
-  font-family: 'Poppins';
-  src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: 'Roboto Regular';
+  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Spoqa Han Sans Neo Bold';
   src: url('../../fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Spoqa Han Sans Neo Regular';
   src: url('../../fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
 }
-
-.processBg{
+@font-face {
+  font-family: 'Noto Sans Bold';
+  src: url('../../fonts/NotoSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Regular';
+  src: url('../../fonts/NotoSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url('../../fonts/Raleway-Bold.ttf') format('truetype');
+}
+.sub-process-bg{
   /* Rectangle 4281 */
    position: absolute;
    width: 1920px;
@@ -19,7 +40,7 @@
  
    background: #FFFFFF;
  }
-.RP{
+.sub-process-title{
   /* Recruiting Process */
   position: absolute;
   width: 613px;
@@ -29,7 +50,7 @@
   margin: 0px;
 
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 600;
   font-size: 61px;
@@ -45,7 +66,7 @@
 
   color: #333333;
 }
-.intro{
+.sub-process-detail{
   position: absolute;
   width: 505px;
   height: 154px;
@@ -55,7 +76,7 @@
 
   /* 18/28 */
 
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -69,7 +90,7 @@
   color: #666666;
 }
 
-.calendar{
+.sub-process-calendar{
   /* 달력 1 */
   position: absolute;
   width: 392.5px;
@@ -80,7 +101,7 @@
   background: url(../../Images/calendar.png);
 }
 
-.first{
+.sub-process-first{
  /* Rectangle 4279 */
   position: absolute;
   width: 345px;
@@ -95,7 +116,7 @@
   border-radius: 15px;
 
 }
-.first1, .second1, .third1,.fourth1{
+.sub-process-first1, .sub-process-second1, .sub-process-third1,.sub-process-fourth1{
 
   position: absolute;
   width: 89px;
@@ -103,7 +124,7 @@
   left: 43.5px;
   top: 42.75px;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
@@ -115,7 +136,7 @@
   /* red */
   color: #E02F36;
 }
-.firstTitle, .secondTitle, .thirdTitle, .fourthTitle{
+.sub-process-firstTitle, .sub-process-secondTitle, .sub-process-thirdTitle, .sub-process-fourthTitle{
   
   position: absolute;
   width: 177px;
@@ -136,7 +157,7 @@
 
   color: #333333;
 }
-.firstDetail ,.secondDetail, .thirdDetail, .fourthDetail{
+.sub-process-firstDetail ,.sub-process-secondDetail, .sub-process-thirdDetail, .sub-process-fourthDetail{
   
   position: absolute;
   width: 271.07px;
@@ -158,7 +179,7 @@
 
   color: #666666;
 }
-.second{
+.sub-process-second{
   /* Rectangle 4279 */
   position: absolute;
   width: 345px;
@@ -172,7 +193,7 @@
   box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
   border-radius: 15px;
 }
-.third{
+.sub-process-third{
   /* Rectangle 4279 */
   position: absolute;
   width: 345px;
@@ -187,7 +208,7 @@
   border-radius: 15px;
 }
 
-.fourth{
+.sub-process-fourth{
   /* Rectangle 4279 */
   position: absolute;
   width: 345px;

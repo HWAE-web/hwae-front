@@ -1,15 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @font-face {
-  font-family: 'Poppins';
-  src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: 'Roboto Regular';
+  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Spoqa Han Sans Neo Bold';
   src: url('../../fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
-  font-family: 'Spoqa Han Sans Neo Regular';
-  src: url('../../fonts/SpoqaHanSansNeo-Regular.ttf') format('truetype');
 }
 
-.recruitBg{
+@font-face {
+  font-family: 'Noto Sans Bold';
+  src: url('../../fonts/NotoSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans Regular';
+  src: url('../../fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+.sub-recruit-bg{
   /* 회색배경 */
   position: absolute;
   width: 1920px;
@@ -19,7 +34,7 @@
 
   background: #FAFAFA;
 }
-.recruit{
+.sub-recruit-title{
   /* Recruit */
   position: absolute;
   width: 156px;
@@ -27,7 +42,7 @@
   left: 191px;
   top: 108px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -40,7 +55,7 @@
   color: #333333;
 
 }
-.textbox{
+.sub-recruit-textbox{
   /* 텍스트 박스 */
   position: absolute;
   left: 23.68%;
@@ -54,14 +69,31 @@
   box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
   border-radius: 18px;
 }
-.front{
+.sub-recruit-front{
   position: absolute;
   width: 88px;
   height: 30px;
   left: 191px;
   top: 275px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  color: #666666;
+}
+.sub-recruit-front:hover, .sub-recruit-front.active{
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  left: 191px;
+  top: 275px;
+
+  font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -69,34 +101,17 @@
   /* identical to box height, or 30px */
 
 
-  color: #666666;
-}
-.front:hover, .front.active{
-  position: absolute;
-  width: 88px;
-  height: 30px;
-  left: 191px;
-  top: 275px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  /* identical to box height, or 30px */
-
-
   color: #E02F36;
 }
 
-.back{
+.sub-recruit-back{
   position: absolute;
   width: 88px;
   height: 30px;
   left: 191px;
   top: 353px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -108,14 +123,14 @@
 
   color: #666666;
 }
-.back:hover, .back.active{
+.sub-recruit-back:hover, .sub-recruit-back.active{
   position: absolute;
   width: 88px;
   height: 30px;
   left: 191px;
   top: 353px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -127,14 +142,14 @@
 
   color: #E02F36;
 }
-.designer{
+.sub-recruit-designer{
   position: absolute;
   width: 85px;
   height: 30px;
   left: 191px;
   top: 431px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Medium';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -146,14 +161,14 @@
 
   color: #666666;
 }
-.designer:hover, .designer.active{
+.sub-recruit-designer:hover, .sub-recruit-designer.active{
   position: absolute;
   width: 85px;
   height: 30px;
   left: 191px;
   top: 431px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -165,7 +180,7 @@
 
   color: #E02F36;
 }
-.title{
+.sub-recruit-title2{
   position: absolute;
   width: 656px;
   height: 58px;
@@ -174,7 +189,7 @@
 
   /* Heading/xlarge */
 
-  font-family: 'Roboto';
+  font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -186,14 +201,14 @@
 
   color: #E02F36;
 }
-.Detail{
+.sub-recruit-detail{
   position: absolute;
   width: 656px;
   height: 66px;
   left: 69.83px;
   top: 123px;
 
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Bold';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -206,14 +221,14 @@
 
   color: #666666;
 }
-.Do{
+.sub-recruit-do{
   position: absolute;
   width: 108.58px;
   height: 31px;
   left: 69.83px;
   top: 311.05px;
   
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -224,7 +239,7 @@
   color: #E02F36;
 
 }
-.DoDetail{
+.sub-recruit-doDetail{
   position: absolute;
   width: 453.33px;
   height: 102.89px;
@@ -233,7 +248,7 @@
 
   /* 16/24 */
 
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -247,14 +262,14 @@
   color: #333333;
 
 }
-.Who{
+.sub-recruit-who{
     position: absolute;
     width: 111.25px;
     height: 36px;
     left: 547.07px;
     top: 311.05px;
     
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -264,13 +279,13 @@
     
     color: #E02F36;
 }
-.Ul{
+.sub-recruit-list{
   position: absolute;
   width: 380.86px;
   height: 69.14px;
   left: 530.52px;
   top: 353.05px;
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -283,7 +298,7 @@
 
   color: #333333;
 }
-.Special{
+.sub-recruit-special{
   /* 우대사항 */
   position: absolute;
   width: 127.92px;
@@ -291,7 +306,7 @@
   left: 954.14px;
   top: 311.05px;
 
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -304,13 +319,13 @@
   color: #E02F36;
 
 }
-.SpecialUl{
+.sub-recruit-list2{
   position: absolute;
   width: 380.86px;
   height: 69.14px;
   left: 939.14px;
   top: 353.05px;
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -323,7 +338,7 @@
 
   color: #333333;
 }
-.Recruit{
+.sub-recruit-recruit{
   position: absolute;
   left: 69.39px;
   top: 559.67px;
