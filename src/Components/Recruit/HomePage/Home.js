@@ -1,5 +1,5 @@
-import "./Recruit_Home.css";
-import NavBar from "../Recruit_NavBar/Recruit_NavBar.js";
+import "./Home.css";
+import NavBar from "../NavBar/NavBar.js";
 
 function Home() {
   return (

@@ -1,4 +1,4 @@
-import "./Recruit_Banner.css";
+import "./Banner.css";
 
 function Banner() {
   return (

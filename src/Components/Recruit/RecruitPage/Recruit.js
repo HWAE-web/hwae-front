@@ -1,4 +1,4 @@
-import "./Recruit_Recruit.css";
+import "./Recruit.css";
 import { useState } from "react";
 
 function Recruit() {

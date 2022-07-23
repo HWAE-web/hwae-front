@@ -1,4 +1,4 @@
-import "./Recruit_NavBar.css";
+import "./NavBar.css";
 
 function NavBar() {
   return (

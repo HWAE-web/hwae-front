@@ -1,4 +1,4 @@
-import "./Recruit_Process.css";
+import "./Process.css";
 
 function Process() {
   return (

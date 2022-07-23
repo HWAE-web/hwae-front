@@ -1,7 +1,11 @@
-import "./App.css";
+import Recruit from "./Components/Recruit/RecruitPage/Recruit";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Recruit />
+    </div>
+  );
 }
 
 export default App;
