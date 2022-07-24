@@ -27,7 +27,7 @@
   src: url('/src/fonts/NotoSans-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Raleway ';
+  font-family: 'Raleway Bold';
   src: url('/src/fonts/Raleway-Bold.ttf') format('truetype');
 }
 .sub-process-bg{
