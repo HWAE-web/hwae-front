@@ -1,6 +1,4 @@
 
-
-
 @font-face {
   font-family: 'Roboto Regular';
   src: url('/src/fonts/Roboto-Regular.ttf') format('truetype');
@@ -98,7 +96,7 @@
 
   font-family: 'Roboto Bold';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   /* identical to box height, or 30px */
@@ -135,7 +133,7 @@
 
   font-family: 'Roboto Bold';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   /* identical to box height, or 30px */
@@ -173,7 +171,7 @@
 
   font-family: 'Roboto Bold';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   /* identical to box height, or 30px */
@@ -357,15 +355,14 @@
   font-family: 'Spoqa Han Sans Neo Bold';
   font-style: normal;
   font-weight: 700px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   
   
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter';
-  font-style: normal;
+  
   
   /* Neutrals/White */
   color: #FFFFFF;
