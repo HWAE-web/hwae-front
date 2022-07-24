@@ -1,16 +1,11 @@
-import Recruit from "./Components/Recruit/RecruitPage/Recruit";
-import Home from "./Components/Recruit/HomePage/Home";
-import Process from "./Components/Recruit/ProcessPage/Process";
-import FAQ from "./Components/Recruit/FAQPage/FAQ";
+import { BrowserRouter as Router } from "react-router-dom";
+import MainHome from "./Components/Main/pages";
 
 function App() {
   return (
-    <div>
-      {/* <Home /> */}
-      {/* <Process /> */}
-      {/* <Recruit /> */}
-      <FAQ />
-    </div>
+    <Router>
+      <MainHome />
+    </Router>
   );
 }
 
