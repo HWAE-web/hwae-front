@@ -1,19 +1,19 @@
 
 @font-face {
   font-family: 'Poppins SemiBold';
-  src: url('../../fonts/Poppins-SemiBold.ttf') format('truetype');
+  src: url('/src/fonts/Poppins-SemiBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto Bold';
-  src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+  src: url('/src/fonts/Roboto-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Noto Sans Regular';
-  src: url('../../fonts/NotoSans-Regular.ttf') format('truetype');
+  src: url('/src/fonts/NotoSans-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inter Medium';
-  src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+  src: url('/src/fonts/Inter-Medium.ttf') format('truetype');
 }
 
 .sub-home-bg{
@@ -90,17 +90,14 @@ color: #666666;
   font-family: 'Poppins SemiBold';
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 18px;
   /* line-height: 18px; */
   
   
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  
   /* Neutrals/White */
   color: #FFFFFF;
 }
@@ -112,7 +109,7 @@ color: #666666;
   left: 785px;
   top: 57px;
   background-size: cover;
-  background-image: url(../../Images/hwae-3d.png);
+  background-image: url(../../../Images/hwae-3d.png);
 }
 .sub-home-RR{
   /* RR */
@@ -123,5 +120,5 @@ color: #666666;
   bottom: 5.65%;
 
   /* backdrop-filter: blur(4px); */
-  background-image: url(../../Images/RR.png);
+  background-image: url(../../../Images/RR.png);
 }

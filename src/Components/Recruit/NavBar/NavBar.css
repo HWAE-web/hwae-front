@@ -1,26 +1,33 @@
 @font-face {
   font-family: 'Poppins Bold';
-  src: url('../../fonts/Poppins-Bold.ttf') format('truetype');
+  src: url('/src/fonts/Poppins-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Poppins SemiBold';
-  src: url('../../fonts/Poppins-SemiBold.ttf') format('truetype');
+  src: url('/src/fonts/Poppins-SemiBold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Poppins Medium';
-  src: url('../../fonts/Poppins-Medium.ttf') format('truetype');
+  src: url('/src/fonts/Poppins-Medium.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inter Medium';
-  src: url('../../fonts/Inter-Medium.ttf') format('truetype');
+  src: url('/src/fonts/Inter-Medium.ttf') format('truetype');
+}
+.sub-nav-bg{
+  position: absolute;
+  width: 1920px;
+  height: 70px;
+  margin: 0;
+  background: #d9d9d9;
 }
 .sub-nav-home{
   /* process */
   position: absolute;
-  left: 41.38%;
-  right: 54.9%;
-  top: 1.76%;
-  bottom: 96.3%;
+  width: 46px;
+  height: 10px;
+  left: 804px;
+  top: 31px;
 
   font-family: 'Poppins Medium';
   font-style: normal;
@@ -39,10 +46,10 @@
 .sub-nav-process{
   /* about */
   position: absolute;
-  left: 46.1%;
-  right: 51.59%;
-  top: 1.76%;
-  bottom: 96.3%;
+  width: 63x;
+  height: 8px;
+  left: 904px;
+  top: 32px;
 
   font-family: 'Poppins Medium';
   font-style: normal;
@@ -61,10 +68,10 @@
 .sub-nav-FAQ{
   /* FAQ */
   position: absolute;
-  left: 50.76%;
-  right: 46.39%;
-  top: 1.76%;
-  bottom: 96.3%;
+  width: 36px;
+  height: 10px;
+  left: 1004px;
+  top: 31px;
 
   font-family: 'Poppins Medium';
   font-style: normal;
@@ -83,10 +90,10 @@
 .sub-nav-recruit{
   /* recruit */
   position: absolute;
-  left: 55.95%;
-  right: 41.38%;
-  top: 1.76%;
-  bottom: 96.3%;
+  width: 56px;
+  height: 10px;
+  left: 1074px;
+  top: 31px;
 
   font-family: 'Poppins Medium';
   font-style: normal;
@@ -105,10 +112,10 @@
 .sub-nav-btn{
   /* Rectangle 3875 */
   position: absolute;
-  width: 102px;
-  height: 35px;
-  left: 1728px;
-  top: 12px;
+  width: 103.22px;
+  height: 35.42px;
+  left: 1747.78px;
+  top: 17.29px;
 
   background: #E02F36;
   border-radius: 37px;
@@ -116,7 +123,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter Medium';
+  font-family: 'Poppins SemiBold';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
