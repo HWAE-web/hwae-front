@@ -1,5 +1,7 @@
 import "./Home.css";
 import NavBar from "../NavBar/NavBar.js";
+import hwae_3d from "../../../Images/hwae-3d.svg";
+import RR from "../../../Images/RR.svg";
 
 function Home() {
   return (
@@ -15,8 +17,8 @@ function Home() {
         화이에서 함께할 분들은 지원 부탁드립니다!
       </p>
       <div className="sub-home-button">Read More</div>
-      <div className="sub-home-img" />
-      <div className="sub-home-RR" />
+      <img src={hwae_3d} alt="hwae_3d" className="sub-home-img"></img>
+      <img src={RR} alt="RR" className="sub-home-RR"></img>
     </div>
   );
 }

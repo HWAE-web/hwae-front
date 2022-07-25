@@ -108,8 +108,8 @@ color: #666666;
   height: 845px;
   left: 785px;
   top: 57px;
-  background-size: cover;
-  background-image: url(../../../Images/hwae-3d.png);
+
+  
 }
 .sub-home-RR{
   /* RR */
@@ -118,7 +118,4 @@ color: #666666;
   right: 48.96%;
   top: 90.65%;
   bottom: 5.65%;
-
-  /* backdrop-filter: blur(4px); */
-  background-image: url(../../../Images/RR.png);
 }
