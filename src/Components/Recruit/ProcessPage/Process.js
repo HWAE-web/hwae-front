@@ -1,5 +1,5 @@
 import "./Process.css";
-
+import calendar from "../../../Images/calendar.svg";
 function Process() {
   return (
     <div className="sub-process-bg">
@@ -9,7 +9,7 @@ function Process() {
         아이디어를 구체 화하고 프로젝트를 진행합니다. 사업 화보다는 즐겁게
         서비스를 개발해 보는 경험을 얻는 것을 목적으로 하고 있습니다.{" "}
       </p>
-      <div className="sub-process-calendar" />
+      <img src={calendar} alt="calendar" className="sub-process-calendar" />
       <div className="sub-process-first">
         <div className="sub-process-first1">01</div>
         <div className="sub-process-firstTitle">서류 접수</div>
