@@ -195,7 +195,7 @@
 
   color: #333333;
 }
-.sub-FAQ-question0:hover,.sub-FAQ-question0.active{
+.sub-FAQ-question0.active{
   position: absolute;
   left: 215px;
   right: 693.27px;
@@ -263,7 +263,7 @@
   color: #333333;
 
 }
-.sub-FAQ-question1:hover,.sub-FAQ-question1.active{
+.sub-FAQ-question1.active{
   position: absolute;
   left: 215px;
   right: 693.27px;
@@ -332,7 +332,7 @@
   color: #333333;
 
 }
-.sub-FAQ-question2:hover,.sub-FAQ-question2.active{
+.sub-FAQ-question2.active{
   position: absolute;
   left: 215px;
   right: 693.27px;
@@ -401,7 +401,7 @@
   color: #333333;
 
 }
-.sub-FAQ-question3:hover,.sub-FAQ-question3.active{
+.sub-FAQ-question3.active{
   position: absolute;
   left: 215px;
   right: 693.27px;
@@ -470,7 +470,7 @@
   color: #333333;
 
 }
-.sub-FAQ-question4:hover,.sub-FAQ-question4.active{
+.sub-FAQ-question4.active{
   position: absolute;
   left: 215px;
   right: 693.27px;
@@ -539,7 +539,7 @@
   color: #333333;
 
 }
-.sub-FAQ-question5:hover,.sub-FAQ-question5.active{
+.sub-FAQ-question5.active{
   position: absolute;
   left: 215px;
   right: 693.27px;
@@ -641,16 +641,90 @@
 
   border: 0.1px solid #D9DBE9;
 }
-/* .plus1{
+.plus0{
     position: absolute;
     left: 1145px;
     right: 199.74px;
     top: 99px;
-    bottom: 670.24px;
-  
-    background-image: url(../../Images/plus.png);
-  
-} */
+    bottom: 670.24px;  
+}
+.plus0.active{
+  position: absolute;
+  left: 1145px;
+  right: 199.74px;
+  top: 104px;
+  bottom: 665.24px;  
+}
+.plus1{
+    position: absolute; 
+    left: 1145px;
+    right: 199.74px;
+    top: 212px;
+    bottom: 557.24px;  
+}
+.plus1.active{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 217px;
+  bottom: 552.24px;  
+}
+.plus2{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 321.58px;
+  bottom: 447.66px;  
+}
+.plus2.active{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 326.58px;
+  bottom: 442.66px; 
+}
+.plus3{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 435px;
+  bottom: 334.24px;  
+}
+.plus3.active{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 440px;
+  bottom: 329.24px; 
+}
+.plus4{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 546px;
+  bottom: 223.24px;  
+}
+.plus4.active{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 551px;
+  bottom: 218.24px; 
+}
+.plus5{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 651px;
+  bottom: 118.24px;  
+}
+.plus5.active{
+  position: absolute; 
+  left: 1145px;
+  right: 199.74px;
+  top: 656px;
+  bottom: 113.24px; 
+}
 .textArea{
   width: 1063px;
   height: 111px;

@@ -3,6 +3,9 @@ import { useState } from "react";
 import All_data from "./All_data.js";
 import Web_data from "./Web_data";
 import App_data from "./App_data";
+import plus from "../../../Images/plus.svg";
+import minus from "../../../Images/minus.svg";
+
 function FAQ() {
   let [tab, setTab] = useState(0); // 탭의 상태를 저장해둘 state
 
@@ -82,12 +85,17 @@ function AllFAQ(props) {
               className={`sub-FAQ-question${i} ${
                 more[i] === true ? "active" : ""
               }`}
-              onClick={() => {
-                more[i] ? outMouseClick(i) : isMouseClick(i);
-              }}
             >
               {AllData[i].question}
             </div>
+            <img
+              src={more[i] === true ? minus : plus}
+              alt="btn"
+              className={`plus${i} ${more[i] === true ? "active" : ""}`}
+              onClick={() => {
+                more[i] ? outMouseClick(i) : isMouseClick(i);
+              }}
+            />
             <div
               className={`sub-FAQ-answer${i} ${
                 more[i] === true ? "active" : ""
