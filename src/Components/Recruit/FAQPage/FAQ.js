@@ -134,12 +134,17 @@ function WEBFAQ(props) {
               className={`sub-FAQ-question${i} ${
                 more[i] === true ? "active" : ""
               }`}
-              onClick={() => {
-                more[i] ? outMouseClick(i) : isMouseClick(i);
-              }}
             >
               {WebData[i].question}
             </div>
+            <img
+              src={more[i] === true ? minus : plus}
+              alt="btn"
+              className={`plus${i} ${more[i] === true ? "active" : ""}`}
+              onClick={() => {
+                more[i] ? outMouseClick(i) : isMouseClick(i);
+              }}
+            />
             <div
               className={`sub-FAQ-answer${i} ${
                 more[i] === true ? "active" : ""
@@ -178,12 +183,17 @@ function APPFAQ(props) {
               className={`sub-FAQ-question${i} ${
                 more[i] === true ? "active" : ""
               }`}
-              onClick={() => {
-                more[i] ? outMouseClick(i) : isMouseClick(i);
-              }}
             >
               {AppData[i].question}
             </div>
+            <img
+              src={more[i] === true ? minus : plus}
+              alt="btn"
+              className={`plus${i} ${more[i] === true ? "active" : ""}`}
+              onClick={() => {
+                more[i] ? outMouseClick(i) : isMouseClick(i);
+              }}
+            />
             <div
               className={`sub-FAQ-answer${i} ${
                 more[i] === true ? "active" : ""
