@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const subHomeBg = styled.div`
+export const SubHomeBg = styled.div`
   position: absolute;
   width: 1920px;
   height: 1080px;
@@ -9,7 +9,7 @@ export const subHomeBg = styled.div`
 
   background: #f8f8fa;
 `;
-export const subHomeTitle = styled.div`
+export const SubHomeTitle = styled.div`
   position: absolute;
   width: 699px;
   height: 348px;
@@ -26,7 +26,7 @@ export const subHomeTitle = styled.div`
 
   color: #333333;
 `;
-export const subHomeTitle2 = styled.div`
+export const SubHomeTitle2 = styled.div`
   position: absolute;
   width: 457px;
   height: 72px;
@@ -45,7 +45,7 @@ export const subHomeTitle2 = styled.div`
   color: #666666;
 `;
 
-export const subHomeBtn = styled.div`
+export const SubHomeBtn = styled.div`
   position: absolute;
   left: 9.95%;
   right: 82.55%;
@@ -67,14 +67,14 @@ export const subHomeBtn = styled.div`
 
   color: #ffffff;
 `;
-export const subHomeImg = styled.img`
+export const SubHomeImg = styled.img`
   position: absolute;
   width: 1160px;
   height: 845px;
   left: 785px;
   top: 57px;
 `;
-export const subHomeRR = styled.img`
+export const SubHomeRR = styled.img`
   position: absolute;
   left: 48.96%;
   right: 48.96%;
