@@ -4,6 +4,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: #fff;
   height: 100vh;
+  scroll-snap-align: start;
 
   @media screen and (max-width: 768px) {
     /* padding: 100px 0; */
@@ -18,8 +19,11 @@ export const InfoWrapper = styled.div`
   max-width: 1580px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   /* padding: 0 24px; */
   justify-content: center;
+  align-items: center;
 `;
 
 export const InfoRow = styled.div`
