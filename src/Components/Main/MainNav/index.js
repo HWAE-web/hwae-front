@@ -1,12 +1,11 @@
 import React from "react";
-import { TbDots } from "react-icons/tb";
+import { GlobalFonts } from "../../../fonts/fonts";
 import mainlogo from "../../../Images/logotest.svg";
 
 import {
   Nav,
   NavBarContainer,
   NavLogo,
-  MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
@@ -14,17 +13,15 @@ import {
   NavBtnLink,
 } from "./NavBarElement";
 
-const MainNav = ({ toggle }) => {
+const MainNav = () => {
   return (
     <>
       <Nav>
+        <GlobalFonts />
         <NavBarContainer>
           <NavLogo to="/">
             <img src={mainlogo} alt="mainLogo"></img>
           </NavLogo>
-          <MobileIcon onClick={toggle}>
-            <TbDots />
-          </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks to="home">Home</NavLinks>
@@ -40,7 +37,7 @@ const MainNav = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/joinus">Join Us</NavBtnLink>
+            <NavBtnLink to="/joinus">Join us</NavBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>
