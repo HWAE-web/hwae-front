@@ -1,24 +1,48 @@
-import { useState } from "react";
-import "./NavBar.css";
+import React from "react";
+import { GlobalFonts } from "../../../fonts/fonts";
+import mainlogo from "../../../Images/logotest.svg";
 
-function NavBar() {
-  // 마우스 윗부분에 올리면 네비게이션바 뜨는 기능 구현해야 함! 근데 어려움
-  return (
-    <div>
-      <NavBarContents />
-    </div>
-  );
-}
+import {
+  Nav,
+  NavBarContainer,
+  NavLogo,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavBtn,
+  NavBtnLink,
+} from "./NavBarElement";
 
-function NavBarContents() {
+const SubNavBar = () => {
   return (
-    <div className="sub-nav-bg">
-      <span className="sub-nav-home">Home</span>
-      <span className="sub-nav-process">process</span>
-      <span className="sub-nav-FAQ">FAQ</span>
-      <span className="sub-nav-recruit">recruit</span>
-      <div className="sub-nav-btn">Log in</div>
-    </div>
+    <>
+      <Nav>
+        <GlobalFonts />
+        <NavBarContainer>
+          <NavLogo to="/">
+            <img src={mainlogo} alt="mainLogo"></img>
+          </NavLogo>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="home">Home</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="process">Process</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="FAQ">FAQ</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="recruit">Recruit</NavLinks>
+            </NavItem>
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/joinus">Join us</NavBtnLink>
+          </NavBtn>
+        </NavBarContainer>
+      </Nav>
+    </>
   );
-}
-export default NavBar;
+};
+
+export default SubNavBar;
