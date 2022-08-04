@@ -89,7 +89,8 @@ export const SubHomeTitle2 = styled.div`
   height: 7px;
   left: 13.2vw;
   top: 55vh;
-
+  margin: 0;
+  
   font-family: "Noto Sans Regular";
   font-style: normal;
   font-weight: 400;
@@ -118,6 +119,8 @@ export const SubHomeBtn = styled.div`
   height: 2.5vw;
   left: 13.3vw;
   top: 65vh;
+  margin: 0;
+
   background: #ff2d46;
   box-shadow: 0px 2.80141px 11.2057px rgba(255, 45, 70, 0.2);
   border-radius: 52.293px;
@@ -137,8 +140,8 @@ export const SubHomeBtn = styled.div`
     font-size: 13px;
     width: 15vw;
     height: 5vw;
-    left: 70vw;
-    top: 41vh;
+    left: 65vw;
+    top: 40.9vh;
   }
 `;
 
