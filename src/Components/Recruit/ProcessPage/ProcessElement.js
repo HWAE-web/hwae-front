@@ -40,7 +40,7 @@ export const SubProcessMainTitle = styled.div`
   width: 47.89vw;
   height: 6vw;
   left: 9.6vw;
-  top: 15vh;
+  top: 10vh;
   margin: 0;
 
   font-family: "Roboto Bold";
@@ -77,7 +77,7 @@ export const SubProcessMainDetail = styled.div`
   width: 29vw;
   height: 8vw;
   left: 9.9vw;
-  top: 28vh;
+  top: 23vh;
   /* 18/28 */
 
   font-family: "Noto Sans Regular";
@@ -207,7 +207,7 @@ export const SubProcessDetail = styled.div`
     width: 50vw;
     height: 6vw;
     left: 4vw;
-    top: 23vh;
+    top: 21vh;
   }
 `;
 export const SubProcessFirst = styled.div`
@@ -220,7 +220,7 @@ export const SubProcessFirst = styled.div`
   width: 18vw;
   height: 20vw;
   left: 48.2vw;
-  top: 14.5vh;
+  top: 7.5vh;
   margin: 0;
   background: #ffffff;
   /* 연한 그림자 */
@@ -245,7 +245,7 @@ export const SubProcessSecond = styled.div`
   width: 18vw;
   height: 20vw;
   left: 68vw;
-  top: 23vh;
+  top: 10.5vh;
   /* 화이트 */
   margin: 0;
 
@@ -269,7 +269,7 @@ export const SubProcessThird = styled.div`
   width: 18vw;
   height: 20vw;
   left: 48.2vw;
-  top: 62vh;
+  top: 52.5vh;
   /* 화이트 */
   margin: 0;
 
@@ -293,7 +293,7 @@ export const SubProcessFourth = styled.div`
   width: 18vw;
   height: 20vw;
   left: 68vw;
-  top: 70.5vh;
+  top: 55.5vh;
   /* 화이트 */
   margin: 0;
   background: #ffffff;
