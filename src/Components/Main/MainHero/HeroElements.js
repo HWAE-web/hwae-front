@@ -178,6 +178,7 @@ export const LaptopWrap = styled.div`
 
 export const Laptop = styled.img`
   width: 110%;
+  filter: drop-shadow(12px 26px 43px rgba(0, 0, 0, 0.23));
 
   @media screen and (max-width: 768px) {
     width: 90%;
