@@ -12,6 +12,12 @@ import {
   MainTextImg,
   Laptop,
   RR,
+  Col1,
+  Col2,
+  Col2Wrap,
+  LaptopWrap,
+  HeroRow,
+  Wrapper,
 } from "./HeroElements";
 import { Button } from "./ButtonElemets";
 
@@ -19,42 +25,57 @@ import Image from "../../../Images/MainBG.png";
 import MainText from "../../../Images/mainText.svg";
 import LaptopImg from "../../../Images/laptop3d.svg";
 import RRImg from "../../../Images/RR.svg";
+import { GlobalFonts } from "../../../fonts/fonts";
 
 const MainHero = () => {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
-  };
+  // const onHover = () => {
+  //   setHover(!hover);
+  // };
   return (
     <>
       <HeroContainer id="home">
+        <GlobalFonts />
         <HeroBG>
           <ImageBg src={Image} />
         </HeroBG>
-        <HeroGradation />
-        <HeroContents>
-          <HeroText>
-            <MainTextImg src={MainText} />
-          </HeroText>
-          <HeroP>Hybrid Web&App projects in EWHA</HeroP>
+        <HeroGradation>
+          <Wrapper>
+            <HeroRow>
+              <Col1>
+                <HeroContents>
+                  <HeroText>
+                    <MainTextImg src={MainText} />
+                  </HeroText>
+                  <HeroP>Hybrid Web&App projects in EWHA</HeroP>
+                  <HeroBtnWrapper>
+                    <Button
+                      to="signup"
+                      // onMouseEnter={onHover}
+                      // onMouseLeave={onHover}
+                      // primary="true"
+                      // dark="true"
+                    >
+                      About us
+                    </Button>
+                  </HeroBtnWrapper>
+                </HeroContents>
+              </Col1>
+              <Col2>
+                <Col2Wrap>
+                  <LaptopWrap>
+                    <Laptop src={LaptopImg} />
+                  </LaptopWrap>
+                </Col2Wrap>
+              </Col2>
+            </HeroRow>
 
-          <HeroBtnWrapper>
-            <Button
-              to="signup"
-              // onMouseEnter={onHover}
-              // onMouseLeave={onHover}
-              // primary="true"
-              // dark="true"
-            >
-              About us
-            </Button>
-          </HeroBtnWrapper>
-          <Laptop src={LaptopImg} />
-          <RR to="about">
-            <img src={RRImg} alt="down" />
-          </RR>
-        </HeroContents>
+            <RR to="about">
+              <img src={RRImg} alt="down" />
+            </RR>
+          </Wrapper>
+        </HeroGradation>
       </HeroContainer>
     </>
   );
