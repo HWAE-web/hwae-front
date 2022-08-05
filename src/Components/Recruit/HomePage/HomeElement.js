@@ -1,11 +1,14 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const SubHomeContainer = styled.div`
   background: #f8f8fa;
-  display: flex;
+  display: grid;
+
   padding: 0 30px;
   height: 100vh;
   // width: 100vw;
+
   position: relative;
   z-index: 1;
   scroll-snap-align: start;
@@ -21,21 +24,37 @@ export const SubHomeContainer = styled.div`
   }
 `;
 
-export const SubHomeRow = styled.div`
+export const SubHomeWrapper = styled.div`
   display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  /* display: flex; */
+  z-index: 1;
+  height: 100%;
+  width: 93%;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  margin-bottom: auto;
+`;
 
+export const SubHomeRow = styled.div`
+  
+  display: grid;
+  // grid-template-columns: repeat(10, 1fr);
+  // /* align-items: center; */
+  // grid-template-areas: "col1 col1 col1 col1 col2 col2 col2 col2 col2 col2";
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas: "col1 col2";
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    grid-template-areas: "col1 col1 col1 col1 col1 col1 col1 col1 col1 col1" "col2 col2 col2 col2 col2 col2 col2 col2 col2 col2";
   }
+
+  
 `;
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
+  
   padding: 0 15px;
   grid-area: col1;
 `;
@@ -46,52 +65,49 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 
+export const Col2Wrap = styled.div`
+  max-width: 900px;
+  padding-top: 0;
+  display: flex;
+`;
+
+export const HomeContents = styled.div`
+  z-index: 3;
+  /* max-width: 1200px; */
+  /* position: absolute; */
+  /* bottom: 400px; */
+  /* padding: 0 24px; */
+  /* display: flex; */
+  flex-direction: column;
+`;
+
 export const SubHomeTitle = styled.div`
-  position: absolute;
-  // width: 699px;
-  // height: 348px;
-  //   left: 185px;
-  //   top: 225px;
-  width: 55vw;
-  height: 27vw;
-  left: 13vw;
-  top: 18vh;
+  max-width: 572px;
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  maring-right: 0;
   font-family: "Roboto Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 86px;
   line-height: 105%;
-  margin: 0;
-
+  
   color: #333333;
-  // @media screen and (max-width: 1000px) {
-  //   font-size: 80px;
-  //   width: 70vw;
-  //   height: 20vw;
-  //   left: 14vw;
-  //   top: 10vh;
-  // }
+
   @media screen and (max-width: 768px) {
     font-size: 75px;
-    width: 70vw;
-    height: 20vw;
-    left: 18vw;
-    top: 12vh;
+    text-align: center;
   }
 `;
 export const SubHomeTitle2 = styled.div`
-  position: absolute;
-  // width: 457px;
-  // height: 72px;
-  // left: 190px;
-  // top: 573px;
-  width: 35.703125vw;
-  height: 7px;
-  left: 13.2vw;
-  top: 55vh;
-  margin: 0;
-  
-  font-family: "Noto Sans Regular";
+
+  max-width: 400px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+
+
+  font-family: "NotoSans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -109,52 +125,32 @@ export const SubHomeTitle2 = styled.div`
   }
 `;
 
-export const SubHomeBtn = styled.div`
-  position: absolute;
-  // width: 144px;
-  // height: 48px;
-  // left: 191px;
-  // top: 680px;
-  width: 8vw;
-  height: 2.5vw;
-  left: 13.3vw;
-  top: 65vh;
-  margin: 0;
-
-  background: #ff2d46;
-  box-shadow: 0px 2.80141px 11.2057px rgba(255, 45, 70, 0.2);
-  border-radius: 52.293px;
-
-  font-family: "Poppins SemiBold";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-
+export const HomeBtnWrapper = styled.div`
+  height: 44px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  /* margin-top: 20px; */
+  margin-left: 10px;
+`;
 
-  color: #ffffff;
+export const HomeImgWrap = styled.div`
+  
+  /* padding-right: 10%; */
+  z-index: 5;
+  max-width:1000px;
+  height: 70%;
 
   @media screen and (max-width: 768px) {
-    font-size: 13px;
-    width: 15vw;
-    height: 5vw;
-    left: 65vw;
-    top: 40.9vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 export const SubHomeImg = styled.img`
-  position: absolute;
-  // width: 1160px;
-  // height: 845px;
-  // left: 785px;
-  // top: 57px;
-  width: 90.625vw;
-  height: 40vw;
-  left: 27vw;
-  top: 4vh;
+  width: 110%
+  // algin-items: center;
   @media screen and (max-width: 768px) {
     width: 90vw;
     height: 80vw;
@@ -163,7 +159,7 @@ export const SubHomeImg = styled.img`
   }
 `;
 export const SubHomeRR = styled.img`
-  position: absolute;
+  // position: absolute;
   // width: 40px;
   // height: 40px;
   // left: 940px;
@@ -174,9 +170,10 @@ export const SubHomeRR = styled.img`
   top: 90vh;
 
   @media screen and (max-width: 768px) {
-    width: 4vw;
-    height: 4vw;
-    left: 50vw;
-    top: 94vh;
+    // width: 4vw;
+    // height: 4vw;
+    // left: 50vw;
+    // top: 94vh;
+    visibility: hidden;
   }
 `;
