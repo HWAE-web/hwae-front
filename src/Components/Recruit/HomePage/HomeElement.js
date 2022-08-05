@@ -129,28 +129,14 @@ export const SubHomeImg = styled.img`
   width: 110%; // algin-items: center;
 
   @media screen and (max-width: 768px) {
-    width: 90vw;
-    height: 80vw;
-    left: 6vw;
-    top: 38vh;
+    width: 80%;
   }
 `;
 export const SubHomeRR = styled.img`
-  // position: absolute;
-  // width: 40px;
-  // height: 40px;
-  // left: 940px;
-  // top: 959px;
-  width: 2vww;
-  height: 2vw;
-  left: 50vw;
-  top: 90vh;
+  cursor: pointer;
+  margin-left: 47%;
 
   @media screen and (max-width: 768px) {
-    // width: 4vw;
-    // height: 4vw;
-    // left: 50vw;
-    // top: 94vh;
     visibility: hidden;
   }
 `;
