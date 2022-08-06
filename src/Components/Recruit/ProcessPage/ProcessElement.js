@@ -1,86 +1,136 @@
 import styled from "styled-components";
+
 export const SubProcessContainer = styled.div`
   background: #ffffff;
   color: #ffffff;
   height: 100vh;
-  // width: 100wh;
+  width: 100%;
+  display: flex;
   scroll-snap-align: start;
 
   @media screen and (max-width: 768px) {
     /* padding: 100px 0; */
   }
 `;
+
 export const SubProcessBg = styled.div`
-  height: 100vh;
-  width: 100wh;
+  height: 80vh;
+  // width: 100wh;
   background: #ffffff;
 `;
 
 export const SubProcessWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 100%;
+  height: 80%;
   width: 100%;
   max-width: 1580px;
   margin-right: auto;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  /* padding: 0 24px; */
   justify-content: center;
   align-items: center;
 `;
+
+export const SubProcessRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* align-items: center; */
+  grid-template-areas: "col1 col1 col2 col3";
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: "col1 col1 col1 col1" "col2 col2 col3 col3"
+  }
+`;
+
+export const Column1 = styled.div`
+  margin-bottom: 15px;
+  display: flex;
+  padding: 0 15px;
+  grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
+`;
+
+export const Column3 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col3;
+`;
+
+export const ColContents1 = styled.div`
+  z-index: 3;
+  /* max-width: 1200px; */
+  /* position: absolute; */
+  /* bottom: 400px; */
+  /* padding: 0 24px; */
+  /* display: flex; */
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+`
+export const ColContents2 = styled.div`
+  z-index: 3;
+  /* max-width: 1200px; */
+  /* position: absolute; */
+  /* bottom: 400px; */
+  /* padding: 0 24px; */
+  /* display: flex; */
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+`
+export const ColContents3 = styled.div`
+  z-index: 3;
+  /* max-width: 1200px; */
+  /* position: absolute; */
+  /* bottom: 400px; */
+  /* padding: 0 24px; */
+  /* display: flex; */
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+`
 export const SubProcessMainTitle = styled.div`
-  /* Recruiting Process */
-  position: absolute;
-  // width: 613px;
-  // height: 73px;
-  // left: 186.88px;
-  // top: 237.75px;
-  width: 47.89vw;
-  height: 6vw;
-  left: 9.6vw;
-  top: 10vh;
-  margin: 0;
+  max-width: 613px;
+  margin: 40px 0 30px 20px;
 
   font-family: "Roboto Bold";
   font-style: normal;
   font-weight: 600;
-  font-size: 61px;
+  font-size: 60px;
   line-height: 120%;
   /* or 73px */
 
   display: flex;
   align-items: center;
   letter-spacing: 0.2px;
-  text-transform: capitalize;
 
   /* 헤드라인 */
 
   color: #333333;
 
   @media screen and (max-width: 768px) {
-    font-size: 47px;
-    width: 70vw;
-    height: 6vw;
-    left: 9.6vw;
-    top: 13vh;
+    margin: 0 0 30px 20px;
+    font-size: 50px;
+    text-align: center;
   }
 `;
 export const SubProcessMainDetail = styled.div`
-  position: absolute;
-  // width: 505px;
-  // height: 154px;
-  // left: 187px;
-  // top: 361px;
-  margin: 0;
-  width: 29vw;
-  height: 8vw;
-  left: 9.9vw;
-  top: 23vh;
-  /* 18/28 */
+  max-width: 505px;
+  margin: 40px 0 190px 21px;
 
-  font-family: "Noto Sans Regular";
+  font-family: "NotoSans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -93,40 +143,60 @@ export const SubProcessMainDetail = styled.div`
 
   color: #666666;
   @media screen and (max-width: 768px) {
-    font-size: 13px;
-    width: 82vw;
-    height: 6vw;
-    left: 10vw;
-    top: 20vh;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
   }
 `;
 
-export const SubProcessCalendar = styled.img`
-  position: absolute;
-  // width: 392.5px;
-  // height: 307.5px;
-  // left: 84.5px;
-  // top: 609.5px;
-  width: 20vw;
-  height: 20vw;
-  left: 5vw;
-  top: 50vh;
+export const CalendarWrap = styled.div`
+  z-index: 5;
+  max-width: 555px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+
+export const Calendar = styled.img`
+  
+  width: 80%;
+  // margin: 0 100px 0 0;
 
   @media screen and (max-width: 768px) {
     visibility: hidden;
   }
 `;
 // 모바일에서는 캘린더 이미지 없앰
+
+export const SubProcessTextBox = styled.div`
+  max-width: 345px;
+  margin: 0;
+  margin-left: 10px;
+  background: #ffffff;
+  /* 연한 그림자 */
+
+  box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
+  border-radius: 15px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+    margin-left: 0;
+  }
+`;
+
+
+export const TitleWrap = styled.div`
+  padding-top: 10%;
+  margin: 0;
+`
+
 export const SubProcessTitle = styled.div`
-  position: absolute;
-  // width: 89px;
-  // height: 66px;
-  // left: 43.5px;
-  // top: 42.75px;
-  width: 50vw;
-  height: 10vw;
-  left: 2vw;
-  top: 5vh;
+
+  max-width: 89px;
+  margin-right: 0px;
+  margin-left: 40px;
+  margin-bottom: 70px;
   font-family: "Raleway Bold";
   font-style: normal;
   font-weight: 700;
@@ -139,56 +209,41 @@ export const SubProcessTitle = styled.div`
   /* red */
   color: #e02f36;
   @media screen and (max-width: 768px) {
-    font-size: 60px;
-    width: 50vw;
-    height: 6vw;
-    left: 4vw;
-    top: 2vh;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
 `;
 
 export const SubProcessTitle1 = styled.div`
-  position: absolute;
-  // width: 177px;
-  // height: 35.75px;
-  // left: 43.5px;
-  // top: 223px;
-  width: 50vw;
-  height: 10vw;
-  left: 2vw;
-  top: 15vh;
+  
+  max-width: 177px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 0px;
 
   font-family: "Spoqa Han Sans Neo Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  display: flex;
-  align-items: center;
+  
   letter-spacing: -0.8px;
 
   /* 헤드라인 */
 
   color: #333333;
   @media screen and (max-width: 768px) {
-    font-size: 25px;
-    width: 50vw;
-    height: 6vw;
-    left: 4vw;
-    top: 16vh;
+    font-size: 23px;
+    margin-left: 30px;
   }
 `;
-export const SubProcessDetail = styled.div`
-  position: absolute;
-  // width: 271.07px;
-  // height: 47.25px;
-  // left: 43.5px;
-  // top: 276.75px;
-  width: 50vw;
-  height: 10vw;
-  left: 2vw;
-  top: 30vh;
 
+export const SubProcessDetail = styled.div`
+  
+  max-width: 271px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "Spoqa Han Sans Neo Regular";
   font-style: normal;
   font-weight: 400;
@@ -204,105 +259,17 @@ export const SubProcessDetail = styled.div`
   color: #666666;
   @media screen and (max-width: 768px) {
     font-size: 15px;
-    width: 50vw;
-    height: 6vw;
-    left: 4vw;
-    top: 21vh;
+    margin-left: 30px;
   }
 `;
-export const SubProcessFirst = styled.div`
-  /* Rectangle 4279 */
-  position: absolute;
-  // width: 345px;
-  // height: 397px;
-  // left: 930.5px;
-  // top: 113.25px;
-  width: 18vw;
-  height: 20vw;
-  left: 48.2vw;
-  top: 7.5vh;
-  margin: 0;
-  background: #ffffff;
-  /* 연한 그림자 */
 
-  box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
-  border-radius: 15px;
-
-  @media screen and (max-width: 768px) {
-    width: 32vw;
-    height: 36vw;
-    left: 16vw;
-    top: 29vh;
-  }
-`;
-export const SubProcessSecond = styled.div`
-  /* Rectangle 4279 */
-  position: absolute;
-  // width: 345px;
-  // height: 397px;
-  // left: 1311.5px;
-  // top: 191.5px;
-  width: 18vw;
-  height: 20vw;
-  left: 68vw;
-  top: 10.5vh;
-  /* 화이트 */
+export const DetailWrap= styled.div`
+  padding-bottom: 15%;
   margin: 0;
-
-  background: #ffffff;
-  box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
-  border-radius: 15px;
-  @media screen and (max-width: 768px) {
-    width: 32vw;
-    height: 36vw;
-    left: 52vw;
-    top: 30vh;
-  }
-`;
-export const SubProcessThird = styled.div`
-  /* Rectangle 4279 */
-  position: absolute;
-  // width: 345px;
-  // height: 397px;
-  // left: 930.5px;
-  // top: 544px;
-  width: 18vw;
-  height: 20vw;
-  left: 48.2vw;
-  top: 52.5vh;
-  /* 화이트 */
-  margin: 0;
-
-  background: #ffffff;
-  box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
-  border-radius: 15px;
-  @media screen and (max-width: 768px) {
-    width: 32vw;
-    height: 36vw;
-    left: 20vw;
-    top: 64vh;
-  }
-`;
-export const SubProcessFourth = styled.div`
-  /* Rectangle 4279 */
-  position: absolute;
-  // width: 345px;
-  // height: 397px;
-  // left: 1311.5px;
-  // top: 622.25px;
-  width: 18vw;
-  height: 20vw;
-  left: 68vw;
-  top: 55.5vh;
-  /* 화이트 */
-  margin: 0;
-  background: #ffffff;
-  box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
-  border-radius: 15px;
-  @media screen and (max-width: 768px) {
-    width: 32vw;
-    height: 36vw;
-    left: 56vw;
-    top: 66vh;
-  }
-`;
+`
+export const TextBoxDiv = styled.div`
+  padding-bottom: 10%;
+`
+export const TextBoxDiv1 = styled.div`
+  padding-bottom: 25%;
+`
