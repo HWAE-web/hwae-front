@@ -7,14 +7,15 @@ import Recruit from "../RecruitPage/Recruit";
 
 import SubNavBar from "../NavBar/NavBar";
 import { PageContainer } from "./PagesElement";
+import { ProcessData } from "../ProcessPage/ProcessData";
 
 const SubPage = () => {
   return (
     <PageContainer>
       <GlobalFonts />
       <SubNavBar />
-      <Home />
-      {/* <Process /> */}
+      {/* <Home /> */}
+      <Process {...ProcessData}/>
       {/* <Recruit /> */}
       {/* <FAQ /> */}
     </PageContainer>
