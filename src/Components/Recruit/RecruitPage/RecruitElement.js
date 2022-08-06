@@ -1,23 +1,60 @@
 import styled from "styled-components";
 
-export const SubRecruitBg = styled.div`
-  /* 회색배경 */
-  position: absolute;
-  width: 1920px;
-  height: 1080px;
-  left: 0px;
-  top: 0px;
-
+export const SubRecruitContainer = styled.div`
+  display: flex;
   background: #fafafa;
+  height: 100vh;
+  width: 100vw;
+`
+export const SubRecruitWrapper = styled.div`
+  display: grid;
+  z-index: 1;
+  height: 90%;
+  width: 100%;
+  max-width: 1650px;
+  margin: 35px 30px 0 30px;
+  
+`
+
+export const SubRecruitRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* align-items: center; */
+  grid-template-areas: "col1 col1 col2 col2 col2 col2 col2 col2 col2 col2";
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: "col1 col1 col1 col1 col1 col1 col1 col1 col1 col1" "col2 col2 col2 col2 col2 col2 col2 col2 col2 col2";
+  }
+`;
+
+export const Column1 = styled.div`
+  padding: 0 15px;
+  grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0;
+  grid-area: col2;
+`;
+
+export const RecruitContents = styled.div`
+  z-index: 3;
+  /* max-width: 1200px; */
+  /* position: absolute; */
+  /* bottom: 400px; */
+  /* padding: 0 24px; */
+  /* display: flex; */
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 `;
 export const SubRecruitTitle = styled.div`
-  /* Recruit */
-  position: absolute;
-  width: 156px;
-  height: 56px;
-  left: 191px;
-  top: 108px;
 
+  max-width: 156px;
+  margin: 90px 0 0 40px;
   font-family: "Roboto Bold";
   font-style: normal;
   font-weight: 600;
@@ -26,31 +63,49 @@ export const SubRecruitTitle = styled.div`
   letter-spacing: 0.2px;
   text-transform: capitalize;
 
-  /* 헤드라인 */
-
   color: #333333;
+  @media screen and (max-width: 768px) {
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
 `;
-export const SubRecruitTextBox = styled.div`
-  /* 텍스트 박스 */
-  position: absolute;
-  left: 23.68%;
-  right: 5.16%;
-  top: 21.48%;
-  bottom: 10.93%;
 
+export const SubRecruitTextBox = styled.div`
+  
+  max-width: 1366px;
+  margin: 150px 0 0px 50px;
   background: rgba(255, 255, 255, 0.79);
-  /* 연한 그림자 */
 
   box-shadow: 0px 7px 22px rgba(20, 20, 43, 0.05);
   border-radius: 18px;
-`;
-export const SubRecruitFront = styled.div`
-  position: absolute;
-  width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
-  height: 30px;
-  left: 191px;
-  top: 275px;
 
+  @media screen and (max-width: 768px) {
+    margin: 30px 0 0 0;
+  }
+`;
+
+export const RecruitTitleWrap = styled.div`
+  display: grid;
+`
+
+export const RecruitListWrap = styled.div`
+  display: grid;
+`
+
+export const RecruitListRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* align-items: center; */
+  grid-template-areas: "row1 row1 row1" "row2 row2 row2" "row3 row3 row3";
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: "row1 row2 row3";
+  }
+`
+export const SubRecruitFront = styled.div`
+  grid-area: row1;
+  max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
+  margin: 70px 0 20px 50px;
   font-family: "Roboto Medium";
   font-style: normal;
   font-weight: ${({ tab }) => (tab === 0 ? 600 : 500)};
@@ -61,11 +116,7 @@ export const SubRecruitFront = styled.div`
   color: ${({ tab }) => (tab === 0 ? "#e02f36" : "#666666")};
 
   &:hover {
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    left: 191px;
-    top: 275px;
+    max-width: 90px;
 
     font-family: "Roboto Bold";
     font-style: normal;
@@ -76,14 +127,17 @@ export const SubRecruitFront = styled.div`
 
     color: #e02f36;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    max-width: 20px;
+    margin: 40px 40px 0 30px;
+  }
 `;
 
 export const SubRecruitBack = styled.div`
-  position: absolute;
-  width: ${({ tab }) => (tab === 1 ? 90 : 88)}px;
-  height: 30px;
-  left: 191px;
-  top: 353px;
+  grid-area: row2;
+  max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
+  margin: 10px 0 20px 50px;
 
   font-family: "Roboto Medium";
   font-style: normal;
@@ -94,11 +148,7 @@ export const SubRecruitBack = styled.div`
   color: ${({ tab }) => (tab === 1 ? "#e02f36" : "#666666")};
 
   &:hover {
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    left: 191px;
-    top: 353px;
+    max-width: 90px;
 
     font-family: "Roboto Bold";
     font-style: normal;
@@ -109,14 +159,15 @@ export const SubRecruitBack = styled.div`
 
     color: #e02f36;
   }
+  @media screen and (max-width: 768px) {
+    margin: 40px 40px 0 30px;
+  }
 `;
 
 export const SubRecruitDesigner = styled.div`
-  position: absolute;
-  width: ${({ tab }) => (tab === 2 ? 90 : 88)}px;
-  height: 30px;
-  left: 191px;
-  top: 431px;
+  grid-area: row3;
+  max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
+  margin: 10px 0 0px 50px;
 
   font-family: "Roboto Medium";
   font-style: normal;
@@ -127,11 +178,7 @@ export const SubRecruitDesigner = styled.div`
   color: ${({ tab }) => (tab === 2 ? "#e02f36" : "#666666")};
 
   &:hover {
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    left: 191px;
-    top: 431px;
+    max-width: 90px;
 
     font-family: "Roboto Bold";
     font-style: normal;
@@ -142,15 +189,40 @@ export const SubRecruitDesigner = styled.div`
 
     color: #e02f36;
   }
+  @media screen and (max-width: 768px) {
+    margin: 40px 40px 0px 30px;
+  }
+`;
+
+export const SubRecruitTBRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* align-items: center; */
+  grid-template-areas: "c1 c1 c1 c1 c2 c2 c2 c3 c3 c3";
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: "";
+  }
+`;
+export const C1 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: c1;
+`;
+export const C2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: c2;
+`;
+export const C3 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: c3;
 `;
 
 export const SubRecruitTitle2 = styled.div`
-  position: absolute;
-  width: 656px;
-  height: 58px;
-  left: 70.29px;
-  top: 51px;
-
+  max-width: 656px;
+  margin: 50px 0 20px 50px;
   font-family: "Roboto Bold";
   font-style: normal;
   font-weight: 700;
@@ -158,16 +230,17 @@ export const SubRecruitTitle2 = styled.div`
   line-height: 120%;
 
   color: #e02f36;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+    margin: 30px 0 20px 30px;
+  }
 `;
 
 export const SubRecruitDetail = styled.div`
-  position: absolute;
-  width: 656px;
-  height: 66px;
-  left: 69.83px;
-  top: 123px;
+  max-width: 656px;
+  margin: 0 0 150px 50px;
 
-  font-family: "Noto Sans Bold";
+  font-family: "NotoSans Bold";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -176,30 +249,35 @@ export const SubRecruitDetail = styled.div`
   letter-spacing: -0.008em;
 
   color: #666666;
-`;
-export const SubRecruitDo = styled.div`
-  position: absolute;
-  width: 108.58px;
-  height: 31px;
-  left: 69.83px;
-  top: 311.05px;
 
-  font-family: "Noto Sans Bold";
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    margin: 0px 0 50px 30px;
+  }
+`;
+
+export const SubRecruitDo = styled.div`
+  max-width: 108.58px;
+  margin: 0 20px 20px 35px;
+
+  font-family: "NotoSans Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
 
   color: #e02f36;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    margin: 0px 0 20px 15px;
+  }
 `;
 export const SubRecruitDoDetail = styled.div`
-  position: absolute;
-  width: 453.33px;
-  height: 102.89px;
-  left: 69.97px;
-  top: 372.05px;
+  max-width: 453px;
+  margin: 0 10px 20px 35px;
 
-  font-family: "Noto Sans Regular";
+  font-family: "NotoSans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -208,29 +286,36 @@ export const SubRecruitDoDetail = styled.div`
   letter-spacing: -0.008em;
 
   color: #333333;
-`;
-export const SubRecruitWho = styled.div`
-  position: absolute;
-  width: 111.25px;
-  height: 36px;
-  left: 547.07px;
-  top: 311.05px;
 
-  font-family: "Noto Sans Bold";
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    margin: 0px 0 20px 15px;
+  }
+`;
+
+export const SubRecruitWho = styled.div`
+  max-width: 111.25px;
+  margin: 0 20px 20px 50px;
+
+  font-family: "NotoSans Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
 
   color: #e02f36;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    margin: 0px 0 20px 15px;
+  }
 `;
 export const SubRecruitList = styled.ul`
-  position: absolute;
-  width: 380.86px;
-  height: 69.14px;
-  left: 530.52px;
-  top: 353.05px;
-  font-family: "Noto Sans Regular";
+
+  max-width: 380.86;
+  margin: 0 20px 20px 30px;
+
+  font-family: "NotoSans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -239,28 +324,32 @@ export const SubRecruitList = styled.ul`
   letter-spacing: -0.008em;
 
   color: #333333;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    margin: 0px 0 20px -10px;
+  }
 `;
 export const SubRecruitSpecial = styled.div`
-  position: absolute;
-  width: 127.92px;
-  height: 31px;
-  left: 954.14px;
-  top: 311.05px;
+  max-width: 128px;
+  margin: 0 20px 20px 35px;
 
-  font-family: "Noto Sans Bold";
+  font-family: "NotoSans Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
 
   color: #e02f36;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    margin: 0px 0 20px 15px;
+  }
 `;
 export const SubRecruitList2 = styled.ul`
-  position: absolute;
-  width: 380.86px;
-  height: 69.14px;
-  left: 939.14px;
-  top: 353.05px;
+  max-width: 380px;
+  margin: 0 20px 20px 10px;
+
   font-family: "Noto Sans Regular";
   font-style: normal;
   font-weight: 400;
@@ -270,27 +359,22 @@ export const SubRecruitList2 = styled.ul`
   letter-spacing: -0.008em;
 
   color: #333333;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    margin: 0px 0 20px -10px;
+  }
 `;
-export const SubRecruitBtn = styled.div`
-  position: absolute;
-  left: 69.39px;
-  top: 559.67px;
-  width: 170px;
-  height: 48px;
 
-  background: #ff2d46;
-  box-shadow: 0px 2.80141px 11.2057px rgba(255, 45, 70, 0.2);
-  border-radius: 52.293px;
-
-  font-family: "Spoqa Han Sans Neo Bold";
-  font-style: normal;
-  font-weight: 800px;
-  font-size: 17px;
-  line-height: 17px;
-
+export const RecruitBtnWrapper = styled.div`
+  height: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  margin: 90px 0 80px 30px;
 
-  color: #ffffff;
+  @media screen and (max-width: 768px) {
+    margin: 90px 0 50px 10px;
+  }
 `;
+
+
