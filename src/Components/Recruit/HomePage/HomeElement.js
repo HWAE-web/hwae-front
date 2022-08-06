@@ -79,7 +79,7 @@ export const SubHomeTitle = styled.div`
   color: #333333;
 
   @media screen and (max-width: 768px) {
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
   }
 `;
@@ -129,7 +129,7 @@ export const SubHomeImg = styled.img`
   width: 110%; // algin-items: center;
 
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 90%;
   }
 `;
 export const SubHomeRR = styled.img`
