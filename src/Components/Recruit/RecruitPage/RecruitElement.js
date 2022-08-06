@@ -5,7 +5,7 @@ export const SubRecruitContainer = styled.div`
   background: #fafafa;
   height: 100vh;
   width: 100vw;
-`
+`;
 export const SubRecruitWrapper = styled.div`
   display: grid;
   z-index: 1;
@@ -13,8 +13,7 @@ export const SubRecruitWrapper = styled.div`
   width: 100%;
   max-width: 1650px;
   margin: 35px 30px 0 30px;
-  
-`
+`;
 
 export const SubRecruitRow = styled.div`
   display: grid;
@@ -52,7 +51,6 @@ export const RecruitContents = styled.div`
   }
 `;
 export const SubRecruitTitle = styled.div`
-
   max-width: 156px;
   margin: 90px 0 0 40px;
   font-family: "Roboto Bold";
@@ -71,7 +69,6 @@ export const SubRecruitTitle = styled.div`
 `;
 
 export const SubRecruitTextBox = styled.div`
-  
   max-width: 1366px;
   margin: 150px 0 0px 50px;
   background: rgba(255, 255, 255, 0.79);
@@ -86,11 +83,11 @@ export const SubRecruitTextBox = styled.div`
 
 export const RecruitTitleWrap = styled.div`
   display: grid;
-`
+`;
 
 export const RecruitListWrap = styled.div`
   display: grid;
-`
+`;
 
 export const RecruitListRow = styled.div`
   display: grid;
@@ -101,7 +98,7 @@ export const RecruitListRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: "row1 row2 row3";
   }
-`
+`;
 export const SubRecruitFront = styled.div`
   grid-area: row1;
   max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
@@ -128,8 +125,6 @@ export const SubRecruitFront = styled.div`
     color: #e02f36;
   }
   @media screen and (max-width: 768px) {
-    font-size: 18px;
-    max-width: 20px;
     margin: 40px 40px 0 30px;
   }
 `;
@@ -311,7 +306,6 @@ export const SubRecruitWho = styled.div`
   }
 `;
 export const SubRecruitList = styled.ul`
-
   max-width: 380.86;
   margin: 0 20px 20px 30px;
 
@@ -369,12 +363,10 @@ export const SubRecruitList2 = styled.ul`
 export const RecruitBtnWrapper = styled.div`
   height: 40px;
   display: flex;
-  
+
   margin: 90px 0 80px 30px;
 
   @media screen and (max-width: 768px) {
     margin: 90px 0 50px 10px;
   }
 `;
-
-
