@@ -5,41 +5,30 @@ import Web_data from "./Web_data";
 import App_data from "./App_data";
 import plus from "../../../Images/plus.svg";
 import minus from "../../../Images/minus.svg";
+import { GlobalFonts } from "../../../fonts/fonts";
+
+import { SubFAQAll, SubFAQApp, SubFAQContainer, SubFAQTextBox, SubFAQTitle, SubFAQWeb, SubFAQWrapper} from "./FAQElement";
 
 function FAQ() {
   let [tab, setTab] = useState(0); // 탭의 상태를 저장해둘 state
 
   return (
-    <div className="sub-FAQ-bg">
-      <div className="sub-FAQ-title">FAQ</div>
-      <div
-        className={`sub-FAQ-ALL ${tab === 0 ? "active" : ""}`}
-        onClick={() => {
+    <SubFAQContainer>
+      <GlobalFonts/>
+      <SubFAQWrapper>
+        <SubFAQTitle>FAQ</SubFAQTitle>
+        <SubFAQAll tab={tab} onClick={() => {
           setTab(0);
-        }}
-      >
-        ALL
-      </div>
-      <div
-        className={`sub-FAQ-WEB ${tab === 1 ? "active" : ""}`}
-        onClick={() => {
-          setTab(1);
-        }}
-      >
-        WEB
-      </div>
-      <div
-        className={`sub-FAQ-APP ${tab === 2 ? "active" : ""}`}
-        onClick={() => {
-          setTab(2);
-        }}
-      >
-        APP
-      </div>
-      <div className="sub-FAQ-textbox">
-        <TabContent tab={tab} />
-      </div>
-    </div>
+        }}>ALL</SubFAQAll>
+        <SubFAQWeb tab={tab} onClick={() => {
+            setTab(1);}}>WEB</SubFAQWeb>
+        <SubFAQApp tab={tab} onClick={() => {
+            setTab(2);}}>APP</SubFAQApp>
+        <SubFAQTextBox>
+          <TabContent tab={tab}/>
+        </SubFAQTextBox>
+      </SubFAQWrapper>
+    </SubFAQContainer>
   );
 }
 function TabContent(props) {
@@ -47,15 +36,15 @@ function TabContent(props) {
     <div>
       {
         [
-          <div>
+          <>
             <AllFAQ />
-          </div>,
-          <div>
+          </>,
+          <>
             <WEBFAQ />
-          </div>,
-          <div>
+          </>,
+          <>
             <APPFAQ />
-          </div>,
+          </>,
         ][props.tab]
       }
     </div>
@@ -77,7 +66,7 @@ function AllFAQ(props) {
     setMore(newMore);
   }
   return (
-    <div className="sub-FAQ-textArea">
+    <>
       {AllData.map(function (a, i) {
         return (
           <div key={i}>
@@ -107,7 +96,7 @@ function AllFAQ(props) {
           </div>
         );
       })}
-    </div>
+    </>
   );
 }
 
