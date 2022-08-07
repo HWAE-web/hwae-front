@@ -7,7 +7,8 @@ export const MainRecruitContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  scroll-snap-align: start;
+  overflow: hidden;
+  /* scroll-snap-align: start; */
 
   :before {
     content: "";
