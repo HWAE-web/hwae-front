@@ -1,5 +1,5 @@
 import { GlobalFonts } from "../../../fonts/fonts";
-import calendar from "../../../Images/calendar.svg";
+
 import {
   SubProcessBg,
   SubProcessMainTitle,
@@ -58,7 +58,6 @@ const Process = ({
             </Column1>
             <Column2>
               <ColContents2>
-              <TextBoxDiv/>
                 <SubProcessTextBox>
                   <TitleWrap>
                     <SubProcessTitle>01</SubProcessTitle>

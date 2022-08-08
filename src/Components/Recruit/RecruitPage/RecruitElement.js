@@ -5,11 +5,24 @@ export const SubRecruitContainer = styled.div`
   background: #fafafa;
   height: 100vh;
   width: 100vw;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  scroll-snap-align: start;
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
 `;
 export const SubRecruitWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 90%;
+  height: 100%;
   width: 100%;
   max-width: 1650px;
   margin: 35px 30px 0 30px;
@@ -39,7 +52,7 @@ export const Column2 = styled.div`
 
 export const RecruitContents = styled.div`
   z-index: 3;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   /* position: absolute; */
   /* bottom: 400px; */
   /* padding: 0 24px; */
@@ -364,7 +377,7 @@ export const RecruitBtnWrapper = styled.div`
   height: 40px;
   display: flex;
 
-  margin: 90px 0 80px 30px;
+  margin: 90px 0 70px 30px;
 
   @media screen and (max-width: 768px) {
     margin: 90px 0 50px 10px;

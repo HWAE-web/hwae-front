@@ -180,7 +180,7 @@ export const SubProcessTextBox = styled.div`
   border-radius: 15px;
 
   @media screen and (max-width: 768px) {
-    max-width: 300px;
+    max-width: 250px;
     margin-left: 0;
   }
 `;
@@ -269,7 +269,13 @@ export const DetailWrap= styled.div`
 `
 export const TextBoxDiv = styled.div`
   padding-bottom: 10%;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 9%;
+  }
 `
 export const TextBoxDiv1 = styled.div`
-  padding-bottom: 25%;
+  padding-bottom: 15%;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 10%;
+  }
 `

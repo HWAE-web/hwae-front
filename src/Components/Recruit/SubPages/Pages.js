@@ -14,9 +14,9 @@ const SubPage = () => {
     <PageContainer>
       <GlobalFonts />
       <SubNavBar />
-      {/* <Home /> */}
+      <Home />
       <Process {...ProcessData}/>
-      {/* <Recruit /> */}
+      <Recruit/>
       {/* <FAQ /> */}
     </PageContainer>
   );

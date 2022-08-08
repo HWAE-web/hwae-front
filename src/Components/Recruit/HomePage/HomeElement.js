@@ -6,6 +6,10 @@ export const SubHomeContainer = styled.div`
   background: #f8f8fa;
   height: 100vh;
   width: 100%;
+  
+  position: relative;
+  z-index: 1;
+  scroll-snap-align: start;
 `;
 
 export const SubHomeWrapper = styled.div`
