@@ -5,7 +5,7 @@ export const ProcessData = {
     img: require("../../../Images/calendar.svg").default,
     alt: "calendar",
     first: "서류 접수",
-    firstDetail: "2022. 11. 11. (월) ~ 11. 11. (월) 23:59:59",
+    firstDetail: "2022. 11. 11. (월) ~ 11. 11. (월)",
     second: "서류 결과 발표",
     secondDetail: "2022. 11. 11. (월)",
     third: "면접",

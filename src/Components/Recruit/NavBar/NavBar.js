@@ -30,10 +30,10 @@ const SubNavBar = () => {
               <NavLinks to="process">Process</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="FAQ">FAQ</NavLinks>
+              <NavLinks to="recruit">Recruit</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="recruit">Recruit</NavLinks>
+              <NavLinks to="FAQ">FAQ</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
