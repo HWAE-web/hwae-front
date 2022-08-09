@@ -28,7 +28,6 @@ import {
   RecruitTitleWrap,
   RecruitBtnWrapper,
   RecruitContents,
-  RecruitListWrap,
   RecruitListRow
 
 } from "./RecruitElement.js";
@@ -45,35 +44,33 @@ function Recruit() {
           <Column1>
           <RecruitContents>
             <SubRecruitTitle>Recruit</SubRecruitTitle>
-            <RecruitListWrap>
               <RecruitListRow>
-            <SubRecruitFront
-              tab={tab}
-              onClick={() => {
-                setTab(0);
-              }}
-            >
-              Front-end
-            </SubRecruitFront>
-            <SubRecruitBack
-              tab={tab}
-              onClick={() => {
-                setTab(1);
-              }}
-            >
-              Back-end
-            </SubRecruitBack>
-            <SubRecruitDesigner
-              tab={tab}
-              onClick={() => {
-                setTab(2);
-              }}
-            >
-              Designer
-            </SubRecruitDesigner>
+                <SubRecruitFront
+                  tab={tab}
+                  onClick={() => {
+                    setTab(0);
+                  }}
+                >
+                  Front-end
+                </SubRecruitFront>
+                <SubRecruitBack
+                  tab={tab}
+                  onClick={() => {
+                    setTab(1);
+                  }}
+                >
+                  Back-end
+                </SubRecruitBack>
+                <SubRecruitDesigner
+                  tab={tab}
+                  onClick={() => {
+                    setTab(2);
+                  }}
+                >
+                  Designer
+                </SubRecruitDesigner>
             </RecruitListRow>
-            </RecruitListWrap>
-            </RecruitContents>
+        </RecruitContents>
       </Column1>
       <Column2>
       <SubRecruitTextBox>

@@ -98,10 +98,6 @@ export const RecruitTitleWrap = styled.div`
   display: grid;
 `;
 
-export const RecruitListWrap = styled.div`
-  display: grid;
-`;
-
 export const RecruitListRow = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -116,8 +112,10 @@ export const SubRecruitFront = styled.div`
   grid-area: row1;
   max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
   margin: 70px 0 20px 50px;
+
   font-family: "Roboto Medium";
   font-style: normal;
+
   font-weight: ${({ tab }) => (tab === 0 ? 600 : 500)};
   font-size: 20px;
   line-height: 150%;
@@ -144,7 +142,7 @@ export const SubRecruitFront = styled.div`
 
 export const SubRecruitBack = styled.div`
   grid-area: row2;
-  max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
+  max-width: ${({ tab }) => (tab === 1 ? 90 : 88)}px;
   margin: 10px 0 20px 50px;
 
   font-family: "Roboto Medium";
@@ -174,7 +172,7 @@ export const SubRecruitBack = styled.div`
 
 export const SubRecruitDesigner = styled.div`
   grid-area: row3;
-  max-width: ${({ tab }) => (tab === 0 ? 90 : 88)}px;
+  max-width: ${({ tab }) => (tab === 2 ? 90 : 88)}px;
   margin: 10px 0 0px 50px;
 
   font-family: "Roboto Medium";
