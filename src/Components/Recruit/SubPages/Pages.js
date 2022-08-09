@@ -17,7 +17,7 @@ const SubPage = () => {
       <Home />
       <Process {...ProcessData}/>
       <Recruit/>
-      {/* <FAQ /> */}
+      <FAQ />
     </PageContainer>
   );
 };
