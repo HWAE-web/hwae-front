@@ -223,11 +223,11 @@ export const QuestionWrap = styled.div`
 
 export const QuestionCol = styled.div`
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 115px 115px 115px 115px 115px 115px;
     grid-template-areas: "row1" "row2" "row3" "row4" "row5" "row6";
-    // @media screen and (max-width: 768px) {
-    //     grid-template-rows: 100px 100px 100px 100px 100px 100px;
-    // }
+    @media screen and (max-width: 768px) {
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
 `
 
 export const Row1 = styled.div`
@@ -279,7 +279,7 @@ export const Row6 = styled.div`
 export const SubFAQQuestion = styled.div`
     display: grid;
     max-width: 453px;
-    margin: ${({ more }) => (more === true ? "20px 30px 0px 100px" : "35px 30px 0px 100px")};
+    margin: ${({ more }) => (more === true ? "20px 30px 0px 100px" : "30px 30px 0px 100px")};
     font-family: 'NotoSans Bold';
     font-style: normal;
     font-weight: 700;
@@ -359,7 +359,7 @@ export const PlusWrap = styled.div`
     z-index: 5;
     max-width: 30px;
     height: 100%;
-    margin: ${({ more }) => (more === true ? "55px 100px 20px 450px" : "40px 100px 20px 450px")};
+    margin: ${({ more }) => (more === true ? "36px 100px 20px 450px" : "40px 100px 20px 450px")};
     @media screen and (max-width: 768px) {
         margin: 30px 0px 30px 0px;
     }
