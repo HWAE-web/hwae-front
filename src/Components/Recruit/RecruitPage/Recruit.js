@@ -38,7 +38,7 @@ function Recruit() {
   return (
     <>
     <GlobalFonts />
-    <SubRecruitContainer>
+    <SubRecruitContainer id="subRecruit">
       <SubRecruitWrapper>
         <SubRecruitRow>
           <Column1>

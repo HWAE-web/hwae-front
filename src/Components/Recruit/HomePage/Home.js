@@ -23,7 +23,7 @@ function Home() {
   return (
     <>
       <GlobalFonts />
-      <SubHomeContainer>
+      <SubHomeContainer id="subHome">
         <SubHomeWrapper>
           <SubHomeRow>
             <Column1>
@@ -39,11 +39,7 @@ function Home() {
                 </SubHomeTitle2>
                 <HomeBtnWrapper>
                   <Button
-                    to="signup"
-                    // onMouseEnter={onHover}
-                    // onMouseLeave={onHover}
-                    // primary="true"
-                    // dark="true"
+                    to="process"
                   >
                     Read More
                   </Button>

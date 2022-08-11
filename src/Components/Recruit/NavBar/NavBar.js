@@ -24,20 +24,20 @@ const SubNavBar = () => {
           </NavLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="home">Home</NavLinks>
+              <NavLinks to="subHome">Home</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="process">Process</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="recruit">Recruit</NavLinks>
+              <NavLinks to="subRecruit">Recruit</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="FAQ">FAQ</NavLinks>
+              <NavLinks to="faq">FAQ</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/joinus">Join us</NavBtnLink>
+            {/* <NavBtnLink to="/joinus">Join us</NavBtnLink> */}
           </NavBtn>
         </NavBarContainer>
       </Nav>

@@ -42,7 +42,7 @@ function FAQ() {
   return (
     <>
     <GlobalFonts/>
-    <SubFAQContainer>
+    <SubFAQContainer id="faq">
       <SubFAQWrapper>
         <SubFAQRow>
           <Column1>

@@ -43,7 +43,7 @@ const Process = ({
   return (
     <>
     <GlobalFonts />
-    <SubProcessContainer id={id}>
+    <SubProcessContainer id="process">
       <SubProcessWrapper>
         <SubProcessBg>
           <SubProcessRow>
