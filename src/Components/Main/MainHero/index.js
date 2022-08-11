@@ -64,9 +64,7 @@ const MainHero = () => {
               </Col1>
               <Col2>
                 <Col2Wrap>
-                  <LaptopWrap>
-                    <Laptop src={LaptopImg} />
-                  </LaptopWrap>
+                  <Laptop src={LaptopImg} />
                 </Col2Wrap>
               </Col2>
             </HeroRow>
