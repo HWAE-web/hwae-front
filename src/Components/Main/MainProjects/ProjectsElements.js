@@ -31,7 +31,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const CarouselWrapper = styled.div`
-  padding: 9% 0;
+  margin: 9% 0;
   @media screen and (max-width: 768px) {
     padding: 30% 0;
   }
@@ -82,5 +82,5 @@ export const StyledSlider = styled(Slider)`
 
 export const Project = styled.img`
   width: 300px !important;
-  filter: drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 `;
