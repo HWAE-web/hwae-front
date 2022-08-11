@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
   background: white;
   display: grid;
 
-  padding: 0 30px;
+  /* padding: 0 30px; */
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -72,7 +72,9 @@ export const Col2 = styled.div`
 `;
 
 export const Col2Wrap = styled.div`
-  max-width: 500px;
+  max-width: 100%;
+
+  justify-content: center;
   padding-top: 0;
   display: flex;
 `;
@@ -82,6 +84,7 @@ export const HeroRow = styled.div`
   grid-template-columns: repeat(10, 1fr);
   /* align-items: center; */
   grid-template-areas: "col1 col1 col1 col1 col1 col1 col2 col2 col2 col2";
+  /* align-items: center; */
 
   @media screen and (max-width: 768px) {
     grid-template-areas: "col1 col1 col1 col1 col1 col1 col1 col1 col1 col1" "col2 col2 col2 col2 col2 col2 col2 col2 col2 col2";
@@ -93,11 +96,11 @@ export const Wrapper = styled.div`
   /* display: flex; */
   z-index: 1;
   height: 60%;
-  width: 93%;
+  width: 100%;
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: auto;
 `;
 
@@ -162,10 +165,10 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const LaptopWrap = styled.div`
-  padding-top: 15%;
+  /* padding-top: 1%; */
   /* padding-right: 10%; */
   z-index: 999;
-  max-width: 600px;
+  max-width: 1000px;
   height: 100%;
 
   @media screen and (max-width: 768px) {
@@ -177,17 +180,26 @@ export const LaptopWrap = styled.div`
 `;
 
 export const Laptop = styled.img`
-  width: 110%;
-  filter: drop-shadow(12px 26px 43px rgba(0, 0, 0, 0.23));
+  padding-top: 5%;
+  width: 105%;
+  /* filter: drop-shadow(12px 26px 43px rgba(0, 0, 0, 0.23)); */
 
   @media screen and (max-width: 768px) {
     width: 90%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 export const RR = styled(Link)`
   cursor: pointer;
-  margin-left: 47%;
+  position: absolute;
+  left: 48.96%;
+  right: 48.96%;
+  top: 90.65%;
+  bottom: 5.65%;
 
   @media screen and (max-width: 768px) {
     display: none;
