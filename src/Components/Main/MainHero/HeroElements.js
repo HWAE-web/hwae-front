@@ -191,6 +191,7 @@ export const Laptop = styled.img`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 `;
 
