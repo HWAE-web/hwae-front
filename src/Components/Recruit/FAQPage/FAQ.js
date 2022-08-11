@@ -1,4 +1,3 @@
-import "./FAQ.css";
 import { useState } from "react";
 import All_data from "./All_data.js";
 import Web_data from "./Web_data";
@@ -7,7 +6,35 @@ import plus from "../../../Images/plus.svg";
 import minus from "../../../Images/minus.svg";
 import { GlobalFonts } from "../../../fonts/fonts";
 
-import { Column1, Column2, Div, FAQContents, FAQListRow, Plus, PlusWrap, Qrow, QuestionCol, QuestionWrap, Row1, Row2, Row3, Row4, Row5, Row6, SubFAQAll, SubFAQApp, SubFAQContainer, SubFAQQuestion, SubFAQQuestion0, SubFAQRow, SubFAQTextBox, SubFAQTitle, SubFAQWeb, SubFAQWrapper, C1, C2, SubFAQAnswer, TextBoxDiv} from "./FAQElement";
+import {  Column1, 
+          Column2, 
+          Div, 
+          FAQContents, 
+          FAQListRow, 
+          Plus, 
+          PlusWrap, 
+          Qrow, 
+          QuestionCol, 
+          QuestionWrap, 
+          Row1, 
+          Row2, 
+          Row3, 
+          Row4, 
+          Row5, 
+          Row6, 
+          SubFAQAll, 
+          SubFAQApp, 
+          SubFAQContainer, 
+          SubFAQQuestion, 
+          SubFAQRow, 
+          SubFAQTextBox, 
+          SubFAQTitle, 
+          SubFAQWeb, 
+          SubFAQWrapper, 
+          C1, 
+          C2, 
+          SubFAQAnswer, 
+          TextBoxDiv} from "./FAQElement";
 
 function FAQ() {
   let [tab, setTab] = useState(0); // 탭의 상태를 저장해둘 state
