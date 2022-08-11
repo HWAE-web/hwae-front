@@ -56,7 +56,7 @@ export const GlobalFonts = createGlobalStyle`
       }
 
       @font-face {
-            font-family: 'Noto Sans Bold';
+            font-family: 'NotoSans Bold';
             src: url(${NotoSansBold}) format('woff');
       }
 
