@@ -1,7 +1,8 @@
 import React from "react";
 import { GlobalFonts } from "../../../fonts/fonts";
 import mainlogo from "../../../Images/logotest.svg";
-
+import { Routes, Route } from "react-router-dom";
+import SubPage from "../../Recruit/SubPages/Pages"
 import {
   Nav,
   NavBarContainer,
@@ -37,10 +38,13 @@ const MainNav = () => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/joinus">Join us</NavBtnLink>
+            <NavBtnLink to="/sub">Join us</NavBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>
+      <Routes>
+        <Route path="/sub" element={<SubPage/>}/>
+      </Routes>
     </>
   );
 };

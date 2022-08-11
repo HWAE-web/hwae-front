@@ -8,7 +8,7 @@ export const MainRecruitContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 
   :before {
     content: "";
@@ -23,6 +23,7 @@ export const MainRecruitContainer = styled.div`
 
 export const MainRecruitBg = styled.div`
   position: absolute;
+
   top: 0;
   right: 0;
   bottom: 0;
@@ -33,6 +34,7 @@ export const MainRecruitBg = styled.div`
 `;
 
 export const ImgBg = styled.img`
+
   width: 100%;
   height: 100%;
 `;

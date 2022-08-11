@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import {
   MainRecruitContainer,
@@ -12,12 +13,13 @@ import {
 } from "./MainRecruitElements";
 
 import { Button } from "../MainHero/ButtonElemets";
-
+import SubPage from "../../Recruit/SubPages/Pages";
 import MainRBg from "../../../Images/recruitBg.png";
 import laptopImg from "../../../Images/recruitpage.svg";
 import { GlobalFonts } from "../../../fonts/fonts";
 
 const MainRecruit = () => {
+  let navigate = useNavigate();
   return (
     <>
       <MainRecruitContainer id="recruit">
@@ -35,10 +37,13 @@ const MainRecruit = () => {
             동아리원을 뽑습니다.
           </MainRP>
           <ButtonWrapper>
-            <Button to="/">Join HWA-E</Button>
+            <Button onClick={() => navigate("/sub")}>Join HWA-E</Button>
           </ButtonWrapper>
         </MainRecruitWrapper>
       </MainRecruitContainer>
+      <Routes>
+        <Route path="/sub" element={<SubPage/>}/>
+      </Routes>
     </>
   );
 };
