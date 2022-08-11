@@ -111,7 +111,7 @@ export const ImageBg = styled.img`
 
 export const MainTextImg = styled.img`
   /* z-index: 999; */
-  padding-top: 5%;
+  padding-top: 8%;
   padding-left: 10px;
   width: 95%;
 
@@ -181,7 +181,8 @@ export const LaptopWrap = styled.div`
 
 export const Laptop = styled.img`
   padding-top: 5%;
-  width: 105%;
+  margin-right: 20%;
+  width: 130%;
   /* filter: drop-shadow(12px 26px 43px rgba(0, 0, 0, 0.23)); */
 
   @media screen and (max-width: 768px) {
