@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainHome/>}/>
         <Route path="/sub" element={<SubPage/>}/>
+        <Route path="/sub/apply" element={<Apply/>}/>
       </Routes>
   );
 }

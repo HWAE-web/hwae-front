@@ -8,7 +8,7 @@ function Apply(){
         <>
         <GlobalFonts/>
         <ApplyContainer>
-            
+
         </ApplyContainer>
         </>
     )
