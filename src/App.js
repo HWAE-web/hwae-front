@@ -1,6 +1,6 @@
 import MainHome from "./Components/Main/pages";
-import SubPage from "./Components/Recruit/SubPages/Pages"
-import Apply from "./Components/Recruit/ApplyPage/Apply";
+import SubPage from "./Components/Sub/SubPages/Pages"
+import Apply from "./Components/Sub/ApplyPage/Apply";
 import { Routes, Route } from "react-router-dom";
 
 function App() {

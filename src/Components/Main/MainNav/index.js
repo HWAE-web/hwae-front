@@ -2,7 +2,7 @@ import React from "react";
 import { GlobalFonts } from "../../../fonts/fonts";
 import mainlogo from "../../../Images/logotest.svg";
 import { Routes, Route } from "react-router-dom";
-import SubPage from "../../Recruit/SubPages/Pages"
+import SubPage from "../../Sub/SubPages/Pages"
 import {
   Nav,
   NavBarContainer,

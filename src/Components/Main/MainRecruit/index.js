@@ -13,7 +13,7 @@ import {
 } from "./MainRecruitElements";
 
 import { Button } from "../MainHero/ButtonElemets";
-import SubPage from "../../Recruit/SubPages/Pages";
+import SubPage from "../../Sub/SubPages/Pages";
 import MainRBg from "../../../Images/recruitBg.png";
 import laptopImg from "../../../Images/recruitpage.svg";
 import { GlobalFonts } from "../../../fonts/fonts";
