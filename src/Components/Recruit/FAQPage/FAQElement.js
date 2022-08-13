@@ -258,7 +258,7 @@ export const Row4 = styled.div`
     margin-bottom: 5px;
     grid-area: row4;
     @media screen and (max-width: 768px) {
-        margin: -0;
+        margin: 0;
     }
 `
 
