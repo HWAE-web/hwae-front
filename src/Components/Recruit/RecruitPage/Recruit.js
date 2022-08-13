@@ -3,6 +3,7 @@ import { GlobalFonts } from "../../../fonts/fonts";
 import { Button } from "./ButtonElement";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Apply from "../ApplyPage/Apply";
+import SubPage from "../SubPages/Pages";
 
 import {
   SubRecruitContainer,
@@ -82,8 +83,9 @@ function Recruit() {
       </SubRecruitWrapper>
     </SubRecruitContainer>
     <Routes>
-      <Route path="/sub/apply" element={<Apply/>}/>
-    </Routes>
+        <Route path="/sub" element={<SubPage/>}/>
+        <Route path="/apply" element={<Apply/>}/>
+      </Routes>
     </>
   );
 }
@@ -130,7 +132,7 @@ function FrontEnd() {
             여기에 더 추가해야 함~!
           </SubRecruitDoDetail>
           <RecruitBtnWrapper>
-            <Button onClick={() => navigate("/sub/apply")}>프론트엔드 지원하기</Button>
+            <Button onClick={() => navigate("/apply")}>프론트엔드 지원하기</Button>
           </RecruitBtnWrapper>
         </C1>
         <C2>
@@ -177,7 +179,7 @@ function BackEnd() {
             여기에 더 추가해야 함~!
           </SubRecruitDoDetail>
           <RecruitBtnWrapper>
-            <Button onClick={() => navigate("/sub/apply")}>백엔드 지원하기</Button>
+            <Button onClick={() => navigate("/apply")}>백엔드 지원하기</Button>
           </RecruitBtnWrapper>
         </C1>
         <C2>
@@ -223,7 +225,7 @@ function Designer() {
             브랜드의 목적에 맞는 프로젝트를 스스로 기획하고 빠르게 실행해요.
           </SubRecruitDoDetail>
           <RecruitBtnWrapper>
-            <Button onClick={() => navigate("/sub/apply")}>디자이너 지원하기</Button>
+            <Button onClick={() => navigate("/apply")}>디자이너 지원하기</Button>
           </RecruitBtnWrapper>
         </C1>
         <C2>

@@ -8,8 +8,9 @@ function App() {
       <Routes>
         <Route path="/" element={<MainHome/>}/>
         <Route path="/sub" element={<SubPage/>}/>
-        <Route path="/sub/apply" element={<Apply/>}/>
+        <Route path="/apply" element={<Apply/>}/>
       </Routes>
+    // <Apply/>
   );
 }
 
