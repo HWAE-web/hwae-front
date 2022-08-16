@@ -2,35 +2,50 @@ import { GlobalFonts } from "../../../fonts/fonts";
 import { Button } from "./ButtonElement";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
-
-import { ApplyBtnWrapper, ApplyCol, ApplyContainer, ApplyContent, C1, C2, Column1, Column2, Column3, Column4, ContentTitle, EmailDetail, EmailInput, EmailRow, InfoRow, NameInput, Row1, Row2, Row3, Row4,Row5, SubApplyTitle, SubApplyWrapper, TeamList, TeamSelect, TeamSelect1, TextArea, TeamTitle, RowWrap3, PWInput, PWRow, PWcol1, PWcol2, PWDetail } from "./ApplyElement";
+import { useState } from "react";
+import { ApplyBtnWrapper,ContentTitle, ApplyTitleContent,PWTitle, ApplyCol, ApplyContainer, ApplyContent, C1, C2, Column1, Column2, Column3, Column4, NameTitle,PartTitle, EmailDetail, EmailInput, EmailRow, InfoRow, NameInput, Row1, Row2, Row3, Row4,Row5, SubApplyTitle, SubApplyWrapper, TeamList, TeamSelect, TeamSelect1, TextArea, TeamTitle, RowWrap3, PWInput, PWRow, PWcol1, PWcol2, PWDetail, EmailTitle,  } from "./ApplyElement";
 import SubPage from "../SubPages/Pages";
 function Apply(){
+    let [name, setName] = useState("");
+    let [team, setTeam] = useState("web");
+    let [part, setPart] = useState("frontend");
+    let [mail, setMail] = useState("");
+    let [password, setPassword] = useState("");
+    
     return(
         <>
         <GlobalFonts/>
         <ApplyContainer>
             <SubApplyWrapper>
-                <ApplyCol>
+                    <ApplyCol>
                     <Row1>
+                        <ApplyTitleContent>
                         <SubApplyTitle>Apply</SubApplyTitle>
+                        </ApplyTitleContent>
                     </Row1>
                     <Row2>
                         <InfoRow>
                             <Column1>
-                                <ContentTitle>이름</ContentTitle>
-                                <NameInput placeholder="Name"/>
+                                <NameTitle>이름</NameTitle>
+                                <NameInput placeholder="Name" 
+                                onChange={(e) => {
+                                    setName(e.target.value);
+                                }}/>
                             </Column1>
                             <Column2>
                                 <TeamTitle name="team">지원팀</TeamTitle>
-                                <TeamSelect>
+                                <TeamSelect handleChange={(e) => {
+                                        setTeam(e.target.value);
+                                }}>
                                     <TeamList value="web">WEB</TeamList>
                                     <TeamList value="app">APP</TeamList>
                                 </TeamSelect>
                             </Column2>
                             <Column3>
-                                <ContentTitle name="part">지원분야</ContentTitle>
-                                <TeamSelect1>
+                                <PartTitle name="part">지원분야</PartTitle>
+                                <TeamSelect1 onChange={(e) => {
+                                        setPart(e.target.value);
+                                }}>
                                     <TeamList value="frontend">Front-End</TeamList>
                                     <TeamList value="backend">Back-End</TeamList>
                                     <TeamList value="designer">Designer</TeamList>
@@ -39,13 +54,16 @@ function Apply(){
                             <Column4>
                                 <EmailRow>
                                   <C1>
-                                    <ContentTitle>E-mail</ContentTitle>
+                                    <EmailTitle>E-mail</EmailTitle>
                                   </C1>
                                   <C2>
                                     <EmailDetail>*이화인 메일만 접수 가능합니다.</EmailDetail>
                                   </C2>
                                 </EmailRow>
-                                <EmailInput placeholder="HWAE@ewhain.net"/>
+                                <EmailInput placeholder="HWAE@ewhain.net"
+                                    onChange={(e) => {
+                                        setMail(e.target.value);
+                                }}/>
                             </Column4>
                         </InfoRow>
                     </Row2>
@@ -53,31 +71,32 @@ function Apply(){
                         <RowWrap3>
                             <PWRow>
                                 <PWcol1>
-                                    <ContentTitle>비밀번호</ContentTitle>
+                                    <PWTitle>비밀번호</PWTitle>
                                 </PWcol1>
                                 <PWcol2>
                                     <PWDetail>*합격자 조회를 위한 4자리 번호</PWDetail>
                                 </PWcol2>
                             </PWRow>
-                            <PWInput placeholder="1234"/>
+                            <PWInput placeholder="1234"
+                             onChange={(e) => {
+                                setPassword(e.target.value);
+                        }}/>
                         </RowWrap3>
                     </Row3>
                     <Row4>
                         <ApplyContent>
                             <ContentTitle>지원동기</ContentTitle>
-                            <TextArea cols="10" rows="10" required="required"/>
+                            <TextArea required="required"/>
                         </ApplyContent>
                     </Row4>
                     <Row5>
                         <ApplyBtnWrapper>
                             <Button onClick={() => {
-                                axios
-                                    .post(
-                                    "url" 
-                                          )
-                                    .then((result) => {
-                                    
-                                    }); 
+                                // axios.post(
+                                //     "url",
+                                //     {name, team, part, mail, password}
+                                //     )
+                                console.log(name, team, part, mail, password)
                                 }}>지원하기</Button>
                         </ApplyBtnWrapper>
                     </Row5>

@@ -4,6 +4,7 @@ export const ApplyContainer = styled.div`
     background: #fafafa;
     display: flex;
     height: 100vh;
+    width: 100vw;
 `;
 
 export const SubApplyWrapper = styled.div`
@@ -11,20 +12,28 @@ export const SubApplyWrapper = styled.div`
     z-index: 3;
     height: 100%;
     width: 100%;
-    // max-width: 1600px;
     margin: 35px 30px 0 30px;
     @media screen and (max-width: 768px) {
-        // margin: 0px 30px 0 30px;
+        margin: 0;
     }
 `;
-
+export const ApplyTitleContent = styled.div`
+  z-index: 3;
+  max-width: 1200px;
+  
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+`;
 export const ApplyCol = styled.div`
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-areas: "row1" "row2" "row3" "row4" "row4" "row4" "row5" "row5"; 
 
   @media screen and (max-width: 768px) {
-    // grid-template-areas: "";
+    grid-template-areas: "row1 row1 row1 row1" "row2 row2 row2 row2" "row2 row2 row2 row2" "row3 row3 row3 row3" "row4 row4 row4 row4" "row4 row4 row4 row4" "row5 row5 row5 row5"  "row5 row5 row5 row5";
   }
 `;
 
@@ -37,37 +46,26 @@ export const Row1 = styled.div`
 
 export const Row2 = styled.div`
     grid-area: row2;
-    @media screen and (max-width: 768px) {
-    
-    }
 `;
 
 export const Row3 = styled.div`
     grid-area: row3;
-    @media screen and (max-width: 768px) {
-    
-    }
 `;
 
 export const RowWrap3 = styled.div`
     margin: 0 1000px 0 250px;
     @media screen and (max-width: 768px) {
-        
+        margin: 0;
     }
 `
 export const Row4 = styled.div`
     grid-area: row4;
-    @media screen and (max-width: 768px) {
-    
-    }
 `;
 
 export const Row5 = styled.div`
     grid-area: row5;
-    @media screen and (max-width: 768px) {
-    
-    }
 `;
+
 export const SubApplyTitle = styled.div`
     max-width: 156px;
     margin: 15px 0 0 140px;
@@ -82,8 +80,9 @@ export const SubApplyTitle = styled.div`
     color: #333333;
 
     @media screen and (max-width: 768px) {
-      margin: 40px 0 0 0;
-      text-align: center;
+        margin: 40px 0 0 0;
+        text-align: center;
+        align-items: center;
     }
 `;
 export const InfoRow = styled.div`
@@ -94,7 +93,8 @@ export const InfoRow = styled.div`
 
   grid-template-areas: "col1 col2 col3 col4 col4";
   @media screen and (max-width: 768px) {
-    // grid-template-areas: "";
+    grid-template-areas: "col1 col4 col4 col4" "col2 col3 col3 none";
+    margin: 0;
   }
 `;
 
@@ -130,7 +130,7 @@ export const ApplyContent = styled.div`
  align-items: center; 
  margin: 0 250px 0 250px;
  @media screen and (max-width: 768px) {
-    // padding: 0;
+    margin: 0;
  }
 `
 
@@ -142,10 +142,28 @@ margin: 40px 500px 0 500px;
 align-items: center;
 justify-content: center;
 @media screen and (max-width: 768px) {
-    // margin: 90px 0 50px 10px;
+    margin: 100px 0 0 0 ;
 }
 `;
 
+export const NameTitle = styled.div`
+    max-width: 70px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 0 50px;
+    display: flex;
+
+    letter-spacing: 0.008em;
+
+    color: #333333;
+    @media screen and (max-width: 768px) {
+        margin: 30px 0 0 50px;
+    }
+`
 export const ContentTitle = styled.div`
     max-width: 70px;
 
@@ -160,6 +178,29 @@ export const ContentTitle = styled.div`
     letter-spacing: 0.008em;
 
     color: #333333;
+
+    @media screen and (max-width: 768px) {
+        margin: 30px 0 0 50px;
+    }
+`
+export const EmailTitle = styled.div`
+    max-width: 70px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 0 50px;
+
+    letter-spacing: 0.008em;
+
+    color: #333333;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100px;
+        margin: 30px 0 0 0px;
+    }
 `
 export const TeamTitle = styled.div`
     max-width: 70px;
@@ -175,6 +216,49 @@ export const TeamTitle = styled.div`
     letter-spacing: 0.008em;
 
     color: #333333;
+
+    @media screen and (max-width: 768px) {
+        margin: 30px 0 0 50px;
+    }
+`
+
+export const PartTitle = styled.div`
+    max-width: 70px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 0 50px;
+    display: flex;
+
+    letter-spacing: 0.008em;
+
+    color: #333333;
+
+    @media screen and (max-width: 768px) {
+        margin: 30px 0 0 -70px;
+    }
+`
+export const PWTitle = styled.div`
+    max-width: 70px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 0 50px;
+    display: flex;
+
+    letter-spacing: 0.008em;
+
+    color: #333333;
+
+    @media screen and (max-width: 768px) {
+        margin: 20px 0 0 50px;
+    }
 `
 export const NameInput = styled.input`
     max-width: 248.21px;
@@ -197,6 +281,11 @@ export const NameInput = styled.input`
     &:focus{
         outline: none;
     }
+
+    @media screen and (max-width: 768px) {
+        max-width: 200px;
+        padding: 10px 0px 10px 15px;
+    }
 `
 export const PWRow = styled.div`
     display: grid;
@@ -204,9 +293,6 @@ export const PWRow = styled.div`
     align-items: center; 
 
     grid-template-areas: "pw1 pw1 pw2 pw2 pw2 pw2 pw2";
-    @media screen and (max-width: 768px) {
-     // grid-template-areas: "";
-    }
 `
 
 export const PWcol1 = styled.div`
@@ -244,6 +330,11 @@ export const PWInput = styled.input`
     &:focus{
         outline: none;
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 0 10px 15px;
+        margin: 20px 0 0 50px;
+    }
 `
 export const PWDetail = styled.div`
     max-width: 253px;
@@ -260,6 +351,11 @@ export const PWDetail = styled.div`
     margin: 3px 0 0 0;
 
     color: #999999;
+
+    @media screen and (max-width: 768px) {
+        margin: 25px 0 0px -45px;
+        font-size: 14px;
+    }
 `
 export const TeamSelect = styled.select`
     max-width: 300px;
@@ -278,6 +374,10 @@ export const TeamSelect = styled.select`
     &:focus{
         outline: none;
     }
+
+    @media screen and (max-width: 768px) {
+        margin: 18px 0 0 50px;
+    }
 `
 
 export const TeamSelect1 = styled.select`
@@ -294,6 +394,10 @@ export const TeamSelect1 = styled.select`
     border: none;
     &:focus{
         outline: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 18px 0px 0 -70px;
     }
 `
 export const TeamList = styled.option`
@@ -323,6 +427,11 @@ export const EmailInput = styled.input`
     &:focus{
         outline: none;
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 100px 10px 15px;
+        margin: 20px 0 0 20px;
+    }
 `
 
 export const EmailRow = styled.div`
@@ -331,8 +440,11 @@ export const EmailRow = styled.div`
   align-items: center; 
 
   grid-template-areas: "c1 c1 c2 c2 c2 c2 c2";
+
   @media screen and (max-width: 768px) {
-    // grid-template-areas: "";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "c1 c1 c2 c2 c2 c2 c2 c2";
+    margin: 0 0 0 20px;
   }
 `;
 
@@ -365,17 +477,23 @@ export const EmailDetail = styled.div`
     margin: 5px 0 0 3px;
 
     color: #999999;
+
+    @media screen and (max-width: 768px) {
+        margin: 35px 0 0 3px;
+        font-size: 14px;
+    }
 `
 
 export const TextArea = styled.textarea`
     max-width: 1090px;
-    margin: 18px 0 0 50px;
+    height: 100%;
+    margin: 90px 0 0 50px;
 
     background: #FFFFFF;
     border-radius: 8px;
     border: none;
     resize: none;
-
+    
     padding: 30px;
     font-family: 'NotoSans Regular';
     font-weight: 400;
@@ -388,5 +506,11 @@ export const TextArea = styled.textarea`
 
     &:focus{
         outline: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+        max-width: 500px;
+        height: 100%;
+        padding: 20px;
     }
 `
