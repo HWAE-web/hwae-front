@@ -5,13 +5,19 @@ import axios from "axios";
 import { useState } from "react";
 import { ApplyBtnWrapper,ContentTitle, ApplyTitleContent,PWTitle, ApplyCol, ApplyContainer, ApplyContent, C1, C2, Column1, Column2, Column3, Column4, NameTitle,PartTitle, EmailDetail, EmailInput, EmailRow, InfoRow, NameInput, Row1, Row2, Row3, Row4,Row5, SubApplyTitle, SubApplyWrapper, TeamList, TeamSelect, TeamSelect1, TextArea, TeamTitle, RowWrap3, PWInput, PWRow, PWcol1, PWcol2, PWDetail, EmailTitle,  } from "./ApplyElement";
 import SubPage from "../SubPages/Pages";
+import { useSelector, useDispatch } from "react-redux";
+
 function Apply(){
     let [name, setName] = useState("");
     let [team, setTeam] = useState("web");
-    let [part, setPart] = useState("frontend");
+    let [part, setPart] = useState("");
     let [mail, setMail] = useState("");
     let [password, setPassword] = useState("");
-    
+
+    var state = useSelector((state) => {
+        return state;
+      });
+
     return(
         <>
         <GlobalFonts/>
@@ -34,7 +40,7 @@ function Apply(){
                             </Column1>
                             <Column2>
                                 <TeamTitle name="team">지원팀</TeamTitle>
-                                <TeamSelect handleChange={(e) => {
+                                <TeamSelect onChange={(e) => {
                                         setTeam(e.target.value);
                                 }}>
                                     <TeamList value="web">WEB</TeamList>
@@ -46,9 +52,9 @@ function Apply(){
                                 <TeamSelect1 onChange={(e) => {
                                         setPart(e.target.value);
                                 }}>
-                                    <TeamList value="frontend">Front-End</TeamList>
-                                    <TeamList value="backend">Back-End</TeamList>
-                                    <TeamList value="designer">Designer</TeamList>
+                                    <TeamList value={state.part[0].name}>{state.part[0].name}</TeamList>
+                                    <TeamList value={state.part[1].name}>{state.part[1].name}</TeamList>
+                                    <TeamList value={state.part[2].name}>{state.part[2].name}</TeamList>
                                 </TeamSelect1>
                             </Column3>
                             <Column4>

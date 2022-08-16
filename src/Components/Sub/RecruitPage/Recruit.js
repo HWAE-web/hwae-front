@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GlobalFonts } from "../../../fonts/fonts";
 import { Button } from "./ButtonElement";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Apply from "../ApplyPage/Apply";
 import SubPage from "../SubPages/Pages";
+import { changeBack, changeDesigner, changeFront } from "./store.js";
+import { useDispatch } from "react-redux";
 
 import {
   SubRecruitContainer,
@@ -90,6 +92,7 @@ function Recruit() {
   );
 }
 function TabContent(props) {
+
   return (
     <div>
       {
@@ -111,7 +114,8 @@ function TabContent(props) {
 
 function FrontEnd() {
   let navigate = useNavigate(); // 페이지 이동
-
+  let dispatch = useDispatch();
+  
   return (
     <>
       <GlobalFonts />
@@ -132,7 +136,7 @@ function FrontEnd() {
             여기에 더 추가해야 함~!
           </SubRecruitDoDetail>
           <RecruitBtnWrapper>
-            <Button onClick={() => navigate("/apply")}>프론트엔드 지원하기</Button>
+            <Button onClick={() => {navigate("/apply"); dispatch(changeFront())}}>프론트엔드 지원하기</Button>
           </RecruitBtnWrapper>
         </C1>
         <C2>
@@ -158,6 +162,7 @@ function FrontEnd() {
 
 function BackEnd() {
   let navigate = useNavigate(); // 페이지 이동
+  let dispatch = useDispatch();
 
   return (
     <>
@@ -179,7 +184,7 @@ function BackEnd() {
             여기에 더 추가해야 함~!
           </SubRecruitDoDetail>
           <RecruitBtnWrapper>
-            <Button onClick={() => navigate("/apply")}>백엔드 지원하기</Button>
+            <Button onClick={() => {navigate("/apply"); dispatch(changeBack());}}>백엔드 지원하기</Button>
           </RecruitBtnWrapper>
         </C1>
         <C2>
@@ -205,6 +210,7 @@ function BackEnd() {
 
 function Designer() {
   let navigate = useNavigate(); // 페이지 이동
+  let dispatch = useDispatch();
 
   return (
     <>
@@ -225,7 +231,7 @@ function Designer() {
             브랜드의 목적에 맞는 프로젝트를 스스로 기획하고 빠르게 실행해요.
           </SubRecruitDoDetail>
           <RecruitBtnWrapper>
-            <Button onClick={() => navigate("/apply")}>디자이너 지원하기</Button>
+            <Button onClick={() => {navigate("/apply"); dispatch(changeDesigner());}}>디자이너 지원하기</Button>
           </RecruitBtnWrapper>
         </C1>
         <C2>

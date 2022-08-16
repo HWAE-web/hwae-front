@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalFonts } from "./fonts/fonts";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
 import store from "./Components/Sub/RecruitPage/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
