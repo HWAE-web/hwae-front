@@ -5,14 +5,15 @@ import axios from "axios";
 import { useState } from "react";
 import { ApplyBtnWrapper,ContentTitle, ApplyTitleContent,PWTitle, ApplyCol, ApplyContainer, ApplyContent, C1, C2, Column1, Column2, Column3, Column4, NameTitle,PartTitle, EmailDetail, EmailInput, EmailRow, InfoRow, NameInput, Row1, Row2, Row3, Row4,Row5, SubApplyTitle, SubApplyWrapper, TeamList, TeamSelect, TeamSelect1, TextArea, TeamTitle, RowWrap3, PWInput, PWRow, PWcol1, PWcol2, PWDetail, EmailTitle,  } from "./ApplyElement";
 import SubPage from "../SubPages/Pages";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 function Apply(){
     let [name, setName] = useState("");
     let [team, setTeam] = useState("web");
-    let [part, setPart] = useState("");
-    let [mail, setMail] = useState("");
+    let [role, setRole] = useState("");
+    let [email, setEmail] = useState("");
     let [password, setPassword] = useState("");
+    let [answer_1, setAnswer_1] = useState("");
 
     var state = useSelector((state) => {
         return state;
@@ -33,14 +34,15 @@ function Apply(){
                         <InfoRow>
                             <Column1>
                                 <NameTitle>이름</NameTitle>
-                                <NameInput placeholder="Name" 
+                                <NameInput placeholder="Name" name="name"
                                 onChange={(e) => {
                                     setName(e.target.value);
                                 }}/>
                             </Column1>
                             <Column2>
                                 <TeamTitle name="team">지원팀</TeamTitle>
-                                <TeamSelect onChange={(e) => {
+                                <TeamSelect name="team"
+                                    onChange={(e) => {
                                         setTeam(e.target.value);
                                 }}>
                                     <TeamList value="web">WEB</TeamList>
@@ -48,9 +50,10 @@ function Apply(){
                                 </TeamSelect>
                             </Column2>
                             <Column3>
-                                <PartTitle name="part">지원분야</PartTitle>
-                                <TeamSelect1 onChange={(e) => {
-                                        setPart(e.target.value);
+                                <PartTitle name="role">지원분야</PartTitle>
+                                <TeamSelect1 name="role"
+                                    onChange={(e) => {
+                                        setRole(e.target.value);
                                 }}>
                                     <TeamList value={state.part[0].name}>{state.part[0].name}</TeamList>
                                     <TeamList value={state.part[1].name}>{state.part[1].name}</TeamList>
@@ -66,9 +69,9 @@ function Apply(){
                                     <EmailDetail>*이화인 메일만 접수 가능합니다.</EmailDetail>
                                   </C2>
                                 </EmailRow>
-                                <EmailInput placeholder="HWAE@ewhain.net"
+                                <EmailInput placeholder="HWAE@ewhain.net" name="email"
                                     onChange={(e) => {
-                                        setMail(e.target.value);
+                                        setEmail(e.target.value);
                                 }}/>
                             </Column4>
                         </InfoRow>
@@ -83,7 +86,7 @@ function Apply(){
                                     <PWDetail>*합격자 조회를 위한 4자리 번호</PWDetail>
                                 </PWcol2>
                             </PWRow>
-                            <PWInput placeholder="1234"
+                            <PWInput placeholder="1234" name="password"
                              onChange={(e) => {
                                 setPassword(e.target.value);
                         }}/>
@@ -92,7 +95,10 @@ function Apply(){
                     <Row4>
                         <ApplyContent>
                             <ContentTitle>지원동기</ContentTitle>
-                            <TextArea required="required"/>
+                            <TextArea required="required" name="answer_1"
+                                onChange={(e) => {
+                                    setAnswer_1(e.target.value);
+                                }}/>
                         </ApplyContent>
                     </Row4>
                     <Row5>
@@ -100,9 +106,9 @@ function Apply(){
                             <Button onClick={() => {
                                 // axios.post(
                                 //     "url",
-                                //     {name, team, part, mail, password}
+                                //     {name, team, role, email, password}
                                 //     )
-                                console.log(name, team, part, mail, password)
+                                console.log(name, team, role, email, password, answer_1);
                                 }}>지원하기</Button>
                         </ApplyBtnWrapper>
                     </Row5>
