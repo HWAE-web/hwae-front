@@ -104,11 +104,22 @@ function Apply(){
                     <Row5>
                         <ApplyBtnWrapper>
                             <Button onClick={() => {
-                                // axios.post(
-                                //     "url",
-                                //     {name, team, role, email, password}
-                                //     )
-                                console.log(name, team, role, email, password, answer_1);
+                                axios.post(
+                                    "/articles/create",
+                                    {   name : name, 
+                                        team : team, 
+                                        role : role,
+                                        email : email, 
+                                        password : password,
+                                        answer_1 : answer_1}
+                                    )
+                                    .then((response) => (
+                                        console.log(response.data)
+                                    ))
+                                    .catch((error) => {
+                                        console.log(error);
+                                    })
+                                // console.log(name, team, role, email, password, answer_1);
                                 }}>지원하기</Button>
                         </ApplyBtnWrapper>
                     </Row5>
