@@ -1,10 +1,10 @@
 import { GlobalFonts } from "../../../fonts/fonts";
 import { Button } from "./ButtonElement";
 import { Routes, Route } from "react-router-dom";
-import axios from "axios";
 import { useState } from "react";
-import { ApplyBtnWrapper,ContentTitle, ApplyTitleContent,PWTitle, ApplyCol, ApplyContainer, ApplyContent, C1, C2, Column1, Column2, Column3, Column4, NameTitle,PartTitle, EmailDetail, EmailInput, EmailRow, InfoRow, NameInput, Row1, Row2, Row3, Row4,Row5, SubApplyTitle, SubApplyWrapper, TeamList, TeamSelect, TeamSelect1, TextArea, TeamTitle, RowWrap3, PWInput, PWRow, PWcol1, PWcol2, PWDetail, EmailTitle,  } from "./ApplyElement";
+import { ApplyBtnWrapper,ContentTitle, ApplyTitleContent,PWTitle, ApplyCol, ApplyContainer, ApplyContent, C1, C2, Column1, Column2, Column3, Column4, NameTitle,PartTitle, EmailDetail, EmailInput, EmailRow, InfoRow, NameInput, Row1, Row2, Row3, Row4,Row5, SubApplyTitle, SubApplyWrapper, TeamList, TeamSelect, TeamSelect1, TextArea, TeamTitle, RowWrap3, PWInput, PWRow, PWcol1, PWcol2, PWDetail, EmailTitle, BlackOut,  } from "./ApplyElement";
 import SubPage from "../SubPages/Pages";
+import Modal from "./Modal";
 import { useSelector } from "react-redux";
 
 function Apply(){
@@ -18,6 +18,13 @@ function Apply(){
     var state = useSelector((state) => {
         return state;
       });
+    
+    // 모달
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModalHandler = (active) => {
+        setIsOpen(active);
+    };
 
     return(
         <>
@@ -104,22 +111,7 @@ function Apply(){
                     <Row5>
                         <ApplyBtnWrapper>
                             <Button onClick={() => {
-                                axios.post(
-                                    "/articles/create",
-                                    {   name : name, 
-                                        team : team, 
-                                        role : role,
-                                        email : email, 
-                                        password : password,
-                                        answer_1 : answer_1}
-                                    )
-                                    .then((response) => (
-                                        console.log(response.data)
-                                    ))
-                                    .catch((error) => {
-                                        console.log(error);
-                                    })
-                                // console.log(name, team, role, email, password, answer_1);
+                                    openModalHandler(true) // '지원하기' 버튼 누르면 모달창 true
                                 }}>지원하기</Button>
                         </ApplyBtnWrapper>
                     </Row5>
@@ -130,8 +122,18 @@ function Apply(){
             <Route path="/sub" element={<SubPage/>}/>
             <Route path="/apply" element={<Apply/>}/>
         </Routes>
+        <>
+        { isOpen && <BodyBlackoutStyle openModalHandler={openModalHandler}/> }
+        { isOpen && <Modal openModalHandler={openModalHandler} name={name} team={team} role={role} email={email} password={password} answer_1={answer_1}/>}
+        </>
         </>
     )
 }
+
+export const BodyBlackoutStyle = ({ openModalHandler }) => {
+    return (
+      <BlackOut onClick={() => openModalHandler(false)}/>
+    );
+  };
 
 export default Apply;

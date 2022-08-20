@@ -514,3 +514,13 @@ export const TextArea = styled.textarea`
         padding: 20px;
     }
 `
+export const BlackOut = styled.div`
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1010;
+    background-color: rgba(0, 0, 0, 0.446);
+`
