@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ModalContainer = styled.div`
     background-color: white;
     width: 40%;
-    // min-width: 300px;
     max-width: 460.5px;
     height: 30%;
     filter: drop-shadow(0px 7px 22px rgba(20, 20, 43, 0.1));
@@ -16,6 +15,11 @@ export const ModalContainer = styled.div`
     padding: 5px;
     transform: translate(-50%, -50%);
     z-index: 1011;
+
+    @media screen and (max-width: 768px) {
+        width: 50%;
+        height: 28%;
+    }
 `
 
 export const ModalContent1 = styled.div`
@@ -29,6 +33,10 @@ export const ModalContent1 = styled.div`
     text-align: center;
 
     color: #333333;
+    @media screen and (max-width: 768px) {
+        margin: 15px 0px 10px 0px;
+        font-size: 21px;
+    }
 `
 export const ModalContent2 = styled.div`
     font-family: 'Spoqa Han Sans Neo';
@@ -41,16 +49,27 @@ export const ModalContent2 = styled.div`
     letter-spacing: -0.008em;
 
     color: #666666;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 `
 export const BtnWrap = styled.div`
     height: 40px;
     display: flex;
 
-    margin: 40px 500px 0 220px;
+    margin-top: 40px;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        margin-top: 45px;
+    }
+    
 `
 export const XBtn = styled.img`
     max-width: 25px;
     margin: 10px 0 0 420px;
+    @media screen and (max-width: 768px) {
+        margin: 10px 0 0 275px;
+    }
 `
