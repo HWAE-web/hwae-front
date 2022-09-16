@@ -34,8 +34,8 @@ function Home() {
                   <br /> Recruiting
                 </SubHomeTitle>
                 <SubHomeTitle2>
-                  화이의 두번째 화이어를 모집합니다. <br />
-                  화이에서 함께할 분들은 지원 부탁드립니다!
+                  화이의 두 번째 화이어를 모집합니다. <br />
+                  화이에서 함께하실 분들은 지원 부탁드립니다!
                 </SubHomeTitle2>
                 <HomeBtnWrapper>
                   <Button
