@@ -1,16 +1,16 @@
 export const ProcessData = {
     id: "process",
     headline: "Recruiting Process",
-    description: "HWA-E는 6개월 정도의 기간 동안 디자이너와 개발자가 팀을 이루어 아이디어를 구체 화하고 프로젝트를 진행합니다. 사업 화보다는 즐겁게 서비스를 개발해 보는 경험을 얻는 것을 목적으로 하고 있습니다.",
+    description: "2기 모집 일정입니다! 마감일을 잘 확인해 주세요. 서류 합격자 조회 및 면접 일정은 ~~ (여기 쓸 말 정해야 함). 최종 합격자는 2023월 03월 03일 20시에 진행하는 OT에 필수로 참여해야 합니다.",
     img: require("../../../Images/calendar.svg").default,
     alt: "calendar",
     first: "서류 접수",
-    firstDetail: "2022. 11. 11. (월) ~ 11. 11. (월)",
+    firstDetail: "2023. 02. 13. (월) ~ 02. 20. (월)",
     second: "서류 결과 발표",
-    secondDetail: "2022. 11. 11. (월)",
+    secondDetail: "2023. 02. 22. (수)",
     third: "면접",
-    thirdDetail: "2022. 11. 11. (월) ~ 11. 11. (월)",
+    thirdDetail: "2023. 02. 23. (목) ~ 02. 26. (일)",
     fourth: "최종 화이어 발표",
-    fourthDetail: "2022. 11. 11. (월)",
+    fourthDetail: "2023. 02. 28. (화)",
 };
   
