@@ -109,7 +109,6 @@ function AllFAQ(props) {
             <QuestionWrap>
               <QuestionCol>
                 <Row1>
-                <TextBoxDiv/>
                   <Qrow>
                     <C1>
                       <SubFAQQuestion more={more[0]}>
@@ -128,7 +127,7 @@ function AllFAQ(props) {
                       </PlusWrap>  
                     </C2>
                   </Qrow>
-                  <Div/>                
+                  <Div more={more[0]}/>                
                 </Row1>
                 <Row2>
                 <Qrow>
@@ -150,7 +149,7 @@ function AllFAQ(props) {
                       </PlusWrap>  
                     </C2>
                   </Qrow>
-                  <Div/>
+                  <Div more={more[1]}/>
                 </Row2>
                 <Row3>
                 <Qrow>
@@ -172,7 +171,7 @@ function AllFAQ(props) {
                       </PlusWrap>  
                     </C2>
                   </Qrow>
-                  <Div/>
+                  <Div more={more[2]}/>
                 </Row3>
                 <Row4>
                 <Qrow>
@@ -194,7 +193,7 @@ function AllFAQ(props) {
                       </PlusWrap>  
                     </C2>
                   </Qrow>
-                  <Div/>
+                  <Div more={more[3]}/>
                 </Row4>
                 <Row5>
                 <Qrow>
@@ -216,7 +215,7 @@ function AllFAQ(props) {
                       </PlusWrap>  
                     </C2>
                   </Qrow>
-                  <Div/>
+                  <Div more={more[4]}/>
                 </Row5>
                 <Row6>
                 <Qrow>
@@ -238,7 +237,6 @@ function AllFAQ(props) {
                       </PlusWrap>  
                     </C2>
                   </Qrow>
-                  <TextBoxDiv/>
                 </Row6>
             </QuestionCol>
           </QuestionWrap>
@@ -266,7 +264,6 @@ function WEBFAQ(props) {
       <Row1>
         <Qrow>
           <C1>
-            <TextBoxDiv/>
             <SubFAQQuestion more={more[0]}>
               {WebData[0].question}
             </SubFAQQuestion>
@@ -283,7 +280,7 @@ function WEBFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>                
+        <Div more={more[0]}/>                
       </Row1>
       <Row2>
       <Qrow>
@@ -305,7 +302,7 @@ function WEBFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[1]}/>
       </Row2>
       <Row3>
       <Qrow>
@@ -327,7 +324,7 @@ function WEBFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[2]}/>
       </Row3>
       <Row4>
       <Qrow>
@@ -349,7 +346,7 @@ function WEBFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[3]} />
       </Row4>
       <Row5>
       <Qrow>
@@ -371,7 +368,7 @@ function WEBFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[4]}/>
       </Row5>
       <Row6>
       <Qrow>
@@ -393,7 +390,6 @@ function WEBFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <TextBoxDiv/>
       </Row6>
   </QuestionCol>
 </QuestionWrap>
@@ -420,7 +416,6 @@ function APPFAQ(props) {
       <Row1>
         <Qrow>
           <C1>
-            <TextBoxDiv/>
             <SubFAQQuestion more={more[0]}>
               {AppData[0].question}
             </SubFAQQuestion>
@@ -437,7 +432,7 @@ function APPFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>                
+        <Div more={more[0]}/>                
       </Row1>
       <Row2>
       <Qrow>
@@ -459,7 +454,7 @@ function APPFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[1]}/>
       </Row2>
       <Row3>
       <Qrow>
@@ -481,7 +476,7 @@ function APPFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[2]}/>
       </Row3>
       <Row4>
       <Qrow>
@@ -503,7 +498,7 @@ function APPFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[3]}/>
       </Row4>
       <Row5>
       <Qrow>
@@ -525,7 +520,7 @@ function APPFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <Div/>
+        <Div more={more[4]}/>
       </Row5>
       <Row6>
       <Qrow>
@@ -547,7 +542,6 @@ function APPFAQ(props) {
             </PlusWrap>  
           </C2>
         </Qrow>
-        <TextBoxDiv/>
       </Row6>
   </QuestionCol>
 </QuestionWrap>
